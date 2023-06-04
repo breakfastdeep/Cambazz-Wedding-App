@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Wedding-App",
+    "slug": "Wedding-App",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+
+      "package": "com.cambazz.wedding"
+    },
+    "web": {
+      "favicon": "./app/assets/favicon.png",
+      "googleServicesFile": "./google-services.json"
+    }
+  }
+}

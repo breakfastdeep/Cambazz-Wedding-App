@@ -1,0 +1,42 @@
+{
+  "name": "react-native-paper-dropdown",
+  "version": "1.0.7",
+  "description": "Dropdown component using React Native Paper TextInput and Menu, now also with multiselect",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/DropDown.js",
+  "types": "dist/DropDown.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fateh999/react-native-paper-dropdown.git"
+  },
+  "keywords": [
+    "Dropdown",
+    "Material",
+    "Dropdown",
+    "React",
+    "Native",
+    "Paper"
+  ],
+  "author": "Fateh Farooqui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fateh999/react-native-paper-dropdown/issues"
+  },
+  "homepage": "https://github.com/fateh999/react-native-paper-dropdown#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-paper": "*",
+    "@types/react": "*",
+    "@types/react-native": "*",
+    "typescript": "*"
+  }
+}

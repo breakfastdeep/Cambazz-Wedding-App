@@ -1,0 +1,994 @@
+    1  sudo npm install font-awesome
+    2  sudo npm install bootstrap
+    3  npm audit fix 
+    4  npm start
+    5  ssh pi@192.168.105.19
+    6  ssh pi@192.168.178.35
+    7  ssh pi@192.168.105.19
+    8  cd /home/breakfastdeep/.ssh
+    9  ls
+   10  rm known_hosts
+   11  rm known_hosts.old 
+   12  ssh pi@192.168.178.35
+   13  ssh pi@192.168.178.35
+   14  ssh pi@192.168.178.33
+   15  ssh pi@192.168.178.35
+   16  ssh osman@192.168.178.35
+   17  ssh pi@192.168.178.35
+   18  ssh ncp@192.168.178.35
+   19  ssh pi@192.168.178.35
+   20  ls
+   21  rm known_hosts
+   22  rm known_hosts.old 
+   23  ssh pi@192.168.178.35
+   24  npm -i loadash
+   25  npm install  lodash
+   26  npm install -g  lodash
+   27  sudo npm install -g  lodash
+   28  [200~sudo dnf install snapd
+   29  sudo dnf install snapd
+   30  sudo ln -s /var/lib/snapd/snap /snap
+   31  sudo snap install mailspring
+   32  sudo snap help refresh
+   33  sudo snap remove mailspring
+   34  sudo snap install mailspring
+   35  npm start
+   36  ls
+   37  cd ..
+   38  ls
+   39  cd my-vidly/
+   40  npm start
+   41  sudo npm start
+   42  sudo snap install vlc
+   43  cd Schreibtisch/React\ -\ Kurs\ -Files/
+   44  ls
+   45  cd React-Examples/
+   46  ls
+   47  npm start
+   48  sudo npm start
+   49  ls
+   50  cd my-vidly/
+   51  npm start
+   52  ls
+   53  npm
+   54  java
+   55  java revanced-cli-2.19.0-all.jar
+   56  ls
+   57  java  revanced-cli-2.19.0-all.jar
+   58  java -jar revanced-cli-2.19.0-all.jar
+   59  java -jar revanced-cli-2.19.0-all.jar -a com.google.android.youtube_17.49.37-1533275584_minAPI26\(arm64-v8a\,armeabi-v7a\,x86\,x86_64\)\(nodpi\)_apkmirror.com.apk
+   60  java -jar revanced-cli-2.19.0-all.jar -a com.google.android.youtube_17.49.37-1533275584_minAPI26\(arm64-v8a\,armeabi-v7a\,x86\,x86_64\)\(nodpi\)_apkmirror.com.apk -b
+   61  ls
+   62  cd Schreibtisch/React\ -\ Kurs\ -Files/
+   63  ls
+   64  cd React-Examples/my-vidly/
+   65  npm start
+   66  npm install -g prop-types
+   67  sudo npm install -g prop-types
+   68  npm start
+   69  sudo snap install cryptsetup
+   70  yum install cryptsetup-luks
+   71  sudo yum install cryptsetup-luks
+   72  cp -r * /run/media/breakfastdeep/WD_BLACK/
+   73  cp -r * /run/media/breakfastdeep/WD_BLACK/Toshiba/
+   74  sudo cp -r * /run/media/breakfastdeep/WD_BLACK/Toshiba/
+   75  systemctl status dbus.service
+   76  npm i docsify-cli -g
+   77  sudo npm i docsify-cli -g
+   78  [200~
+   79  docsify serve docs~
+   80  docsify init
+   81  docsify serve
+   82  python psn-account-id.py 
+   83  git clone https://github.com/verygenericname/SSHRD_Script --recursive && cd SSHRD_Script
+   84  git pull
+   85  ./sshrd.sh 14.5.2
+   86  sudo cp -r * /bin/
+   87  ls
+   88  iproxy
+   89  sudo iproxy 22 44
+   90  sudo iproxy -l
+   91  wget -O - https://assets.checkra.in/debian/archive.key | gpg --dearmor | sudo tee /usr/share/keyrings/checkra1n.gpg >/dev/null
+   92  echo 'deb [signed-by=/usr/share/keyrings/checkra1n.gpg] https://assets.checkra.in/debian /' | sudo tee /etc/apt/sources.list.d/checkra1n.list
+   93  sudo dnf install checkra1n
+   94  sudo yum install checkra1n
+   95  cd ..
+   96  chmod +x checkra1n
+   97  ./checkra1n
+   98  sudo ./checkra1n
+   99  sudo dnf install libimobiledevice-static-linux.tar.zst
+  100  sudo dnf install ./libimobiledevice-static-linux.tar.zst
+  101  [200~sudo iproxy 22 44~
+  102  sudo iproxy 22 44~
+  103  sudo iproxy 22 44
+  104  irecovery
+  105  irecovery -i
+  106  irecovery -m
+  107  irecovery -n
+  108  git clone https://github.com/tihmstar/usbmuxd2
+  109  cd usbmuxd2/
+  110  ./autogen.sh
+  111  make
+  112  sudo make
+  113  ls
+  114  makefile
+  115  ./install-sh
+  116  sudo ./install-sh
+  117  chmod +x #./install-sh
+  118  chmod +x ./install-sh
+  119  sudo chmod +x ./install-sh
+  120  sudo ./install-sh
+  121  sudo snap install usbmuxd-daemon --edge
+  122  irecovery -n
+  123  usbmuxd
+  124  iproxy 2222:22
+  125  git clone https://github.com/libimobiledevice/libusbmuxd.git
+  126  cd libusbmuxd
+  127  ./autogen.sh 
+  128  make
+  129  ls
+  130  sudo dnf install make
+  131  sudo make install
+  132  sudo make
+  133  cd ..
+  134  cd Downloads/
+  135  sudo ./checkra1n
+  136  iproxy
+  137  bash -c "sh <(curl -fsSL https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"
+  138  sudo bash -c "sh <(curl -fsSL https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)" --restore
+  139  sudo bash -c "sh <(curl -fsSL https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)" --restore 2.1.4
+  140  sudo bash -c "sh <(curl -fsSL https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)"
+  141  opam
+  142  opam init
+  143  eval $(opam env --switch=default) 
+  144  gandald
+  145  gandalf
+  146  opam install gandalf
+  147  opam install usbmux
+  148  usbmux
+  149  gandalf
+  150  opam gandalf
+  151  opam gandalf -s
+  152  opam gandalf --helfp
+  153  opam install usbmux
+  154  sudo opam install usbmux
+  155  sudo opam init
+  156  gandalf
+  157  opam install usbmux
+  158  usbmux
+  159  sudo snap install libimobiledevice --edge
+  160  sudo iproxy 22 44
+  161  git clone https://github.com/joshuah345/deverser.git && cd deverser
+  162  [200~chmod +x deverser.sh
+  163  chmod +x deverser.sh 
+  164  ./deverser.sh
+  165  chmod +x Transkribus
+  166  chmod +x Transkribus.sh
+  167  ./Transkribus.sh
+  168  sudo dnf install libwebkitgtk
+  169  sudo yum install libwebkitgtk
+  170  sudo yum install webkitgtk
+  171  sudo dnf install webkitgtk
+  172  npm -i -g install iink-js
+  173  sudo npm -i -g install iink-js
+  174  ./Transkribus.sh
+  175  cd ~/.cache
+  176  ls
+  177  cd ..
+  178  cd ~/.config/
+  179  ls
+  180  dnf remove vlc
+  181  sudo dnf remove vlc
+  182  sudo snap install vlc
+  183  vlc
+  184  sudo vlc
+  185  cvlc
+  186  [200~sudo dnf install vlc~
+  187  cvlc
+  188  sudo dnf install vlc
+  189  sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+  190  sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+  191  $ sudo dnf install vlc
+  192  sudo dnf install vlc
+  193  sudo dnf autoremove vlc -y. 
+  194  sudo dnf autoremove vlc -y
+  195  snap remove vlc
+  196  cd ~/.config
+  197  ls
+  198  find vlc
+  199  find -m vlc
+  200  find -n vlc
+  201  find --help
+  202  ls
+  203  cd /
+  204  $(HOME)/.config/vlc/vlcrc
+  205  cd $(HOME)/.config/vlc/vlcrc
+  206  cd ~/.config/vlc/vlcrc
+  207  sudo dnf install vlc
+  208  sudo npm -version
+  209  sudo node -v
+  210  sudo npm -i -g expo-cli
+  211  sudo npm i -g expo-cli
+  212  dnf check update
+  213  dnf check-update
+  214  sudo dnf install code
+  215  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+  216  sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+  217  sudo dnf install code
+  218  sudo snap install code
+  219  code ~/.bash_profile
+  220  code ~/.bashrc
+  221  npm start
+  222  npx expo install react-native-web@~0.18.9 react-dom@18.1.0 @expo/webpack-config@^0.17.2
+  223  npm audit fix
+  224  npm start
+  225  npx expo install react-native-web react-dom @expo/webpack-config
+  226  npm audit fix --force
+  227  npm start
+  228  expo init DoneWithIt
+  229  cd DoneWithIt/
+  230  code .
+  231  dnf-automatic download_updates
+  232  dnf-automatic
+  233  sudo yum install @virtualization
+  234  sudo systemctl start libvirtd
+  235  sudo systemctl enable libvirtd
+  236  reboot
+  237  make
+  238  ls
+  239  ,ale
+  240  make
+  241  sudo make
+  242  chmod +x hax-install.sh
+  243  chmod +x haxm-install.sh
+  244  ./haxm-install.sh
+  245  sudo ./haxm-install.sh
+  246  make
+  247  yum groupinstall "Development Tools"
+  248  sudo yum groupinstall "Development Tools"
+  249  make
+  250  lsmod | grep kvm
+  251  virsh list
+  252  sudo virsh list
+  253  sudo dnf group install --with-optional virtualization;
+  254  egrep --color 'vmx|svm' /proc/cpuinfo | wc -l
+  255  sudo dnf install -y qemu-kvm bridge-utils libvirt virt-install
+  256  sudo ln -sf /snap/bin/android-studio /usr/local/bin/android-studio
+  257  sudo snap install android-studio --classic
+  258  sudo ln -sf /snap/bin/android-studio /usr/local/bin/android-studio
+  259  sudo snap install android-studio
+  260  android-studio
+  261  sudo dnf install cpu-checker
+  262  snap remove android-studio
+  263  unlink /snap/bin/android-studio
+  264  unlink /usr/local/bin/android-studio
+  265  sudo unlink /usr/local/bin/android-studio
+  266  top
+  267  top | grep gemu
+  268  top
+  269  ps -a | grep gemu
+  270  ps -a | grep gemuclear
+  271  clear
+  272  cd ~/.local/share/
+  273  ls
+  274  cd flatpak/
+  275  ls
+  276  cd ..
+  277  cd ~/.config/
+  278  ls
+  279  $ sudo rm -r ./android-studio
+  280  rm -r ~/.local/share/applications/jetbrains-android-studio.desktop ,
+  281  flatpak uninstall android-studio --delete-data
+  282  flatpak uninstall com.google.AndroidStudio --delete-data
+  283  flatpak uninstall com.google.AndroidStudio --all
+  284  flatpak uninstall --all com.google.AndroidStudio
+  285  flatpak uninstall --help
+  286  flatpak install flathub com.google.AndroidStudio
+  287  echo "QuickbootFileBacked = off" >> ~/.android/advancedFeatures.ini
+  288  npm start
+  289  npx expo install @expo/webpack-config@^0.17.2
+  290  npm audit fix
+  291  sudo npm audit fix --force
+  292  npm start
+  293  sudo npm audit fix --force
+  294  npm start
+  295  sudo npm audit fix --force
+  296  npm start
+  297  expi
+  298  expo
+  299  npm start
+  300  npm stop
+  301  npm start
+  302  ls
+  303  react-native upgrade
+  304  react-native
+  305  npx react-native info
+  306  npx react-native upgrade
+  307  sudo npx react-native upgrade
+  308  npx react-native upgrade
+  309  npm start
+  310  sudo rm /home/breakfastdeep/.android/avd/Pixel_2_API_33.avd/*.lock
+  311  [200~npm i -g expo-cli~
+  312  npm i -g expo-cli~
+  313  npm i -g expo-cli
+  314  npm start
+  315  npm i react-devtools
+  316  expo publish
+  317  cd DoneWithIt/
+  318  expo publish
+  319  npm stop
+  320  npm start
+  321  sudo dnf upgrade
+  322  reboot
+  323  sudo rm /home/breakfastdeep/.android/avd/Resizable_Experimental_API_33.avd/*.lock
+  324  sudo rm /home/breakfastdeep/.android/avd/Resizable_Experimental_API_33.avd/*.lock 
+  325  npm start
+  326  pwd
+  327  touch .zshrc
+  328  nano .zshrc 
+  329  [200~/home/breakfastdeep/Android/Sdk
+  330  nano .bashrc 
+  331  sudo dnf upgrade
+  332  npm start
+  333  expo start
+  334  export default function App() {
+  335  npx react-native doctor
+  336  npm run android
+  337  npx react-native doctor
+  338  #!/bin/sh
+  339  # Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+  340  # ---------------------------------------------------------------------
+  341  # Android Studio startup script.
+  342  # ---------------------------------------------------------------------
+  343  message() {   TITLE="Cannot start Android Studio";   if [ -n "$(command -v zenity)" ]; then     zenity --error --title="$TITLE" --text="$1" --no-wrap;   elif [ -n "$(command -v kdialog)" ]; then     kdialog --error "$1" --title "$TITLE";   elif [ -n "$(command -v notify-send)" ]; then     notify-send "ERROR: $TITLE" "$1";   elif [ -n "$(command -v xmessage)" ]; then     xmessage -center "ERROR: $TITLE: $1";   else     printf "ERROR: %s\n%s\n" "$TITLE" "$1";   fi; }
+  344  if [ -z "$(command -v uname)" ] || [ -z "$(command -v realpath)" ] || [ -z "$(command -v dirname)" ] || [ -z "$(command -v cat)" ] ||    [ -z "$(command -v egrep)" ]; then   TOOLS_MSG="Required tools are missing:";   for tool in uname realpath egrep dirname cat ; do      test -z "$(command -v $tool)" && TOOLS_MSG="$TOOLS_MSG $tool";   done;   message "$TOOLS_MSG (SHELL=$SHELL PATH=$PATH)";   exit 1; fi
+  345  # shellcheck disable=SC2034
+  346  GREP_OPTIONS=''
+  347  OS_TYPE=$(uname -s)
+  348  OS_ARCH=$(uname -m)
+  349  # ---------------------------------------------------------------------
+  350  # Ensure $IDE_HOME points to the directory where the IDE is installed.
+  351  # ---------------------------------------------------------------------
+  352  IDE_BIN_HOME=$(dirname "$(realpath "$0")")
+  353  IDE_HOME=$(dirname "${IDE_BIN_HOME}")
+  354  CONFIG_HOME="${XDG_CONFIG_HOME:-${HOME}/.config}"
+  355  # ---------------------------------------------------------------------
+  356  # Locate a JRE installation directory command -v will be used to run the IDE.
+  357  # Try (in order): $STUDIO_JDK, .../studio.jdk, .../jbr, $JDK_HOME, $JAVA_HOME, "java" in $PATH.
+  358  # ---------------------------------------------------------------------
+  359  JRE=""
+  360  # shellcheck disable=SC2154
+  361  if [ -n "$STUDIO_JDK" ] && [ -x "$STUDIO_JDK/bin/java" ]; then   JRE="$STUDIO_JDK"; fi
+  362  if [ -z "$JRE" ] && [ -s "${CONFIG_HOME}/Google/AndroidStudio2022.1/studio.jdk" ]; then   USER_JRE=$(cat "${CONFIG_HOME}/Google/AndroidStudio2022.1/studio.jdk");   if [ -x "$USER_JRE/bin/java" ]; then     JRE="$USER_JRE";   fi; fi
+  363  if [ -z "$JRE" ] && [ "$OS_TYPE" = "Linux" ] && [ "$OS_ARCH" = "x86_64" ] && [ -d "$IDE_HOME/jbr" ]; then   JRE="$IDE_HOME/jbr"; fi
+  364  # shellcheck disable=SC2153
+  365  if [ -z "$JRE" ]; then   if [ -n "$JDK_HOME" ] && [ -x "$JDK_HOME/bin/java" ]; then     JRE="$JDK_HOME";   elif [ -n "$JAVA_HOME" ] && [ -x "$JAVA_HOME/bin/java" ]; then     JRE="$JAVA_HOME";   fi; fi
+  366  if [ -z "$JRE" ]; then   JAVA_BIN=$(command -v java); else   JAVA_BIN="$JRE/bin/java"; fi
+  367  if [ -z "$JAVA_BIN" ] || [ ! -x "$JAVA_BIN" ]; then   message "No JRE found. Please make sure \$STUDIO_JDK, \$JDK_HOME, or \$JAVA_HOME point to valid JRE installation.";   exit 1; fi
+  368  # ---------------------------------------------------------------------
+  369  # Collect JVM options and IDE properties.
+  370  # ---------------------------------------------------------------------
+  371  IDE_PROPERTIES_PROPERTY=""
+  372  # shellcheck disable=SC2154
+  373  if [ -n "$STUDIO_PROPERTIES" ]; then   IDE_PROPERTIES_PROPERTY="-Didea.properties.file=$STUDIO_PROPERTIES"; fi
+  374  VM_OPTIONS_FILE=""
+  375  USER_VM_OPTIONS_FILE=""
+  376  # shellcheck disable=SC2154
+  377  if [ -n "$STUDIO_VM_OPTIONS" ] && [ -r "$STUDIO_VM_OPTIONS" ]; then
+  378    VM_OPTIONS_FILE="$STUDIO_VM_OPTIONS"; else
+  379    if [ -r "${IDE_BIN_HOME}/studio64.vmoptions" ]; then     VM_OPTIONS_FILE="${IDE_BIN_HOME}/studio64.vmoptions";   else     test "${OS_TYPE}" = "Darwin" && OS_SPECIFIC="mac" || OS_SPECIFIC="linux";     if [ -r "${IDE_BIN_HOME}/${OS_SPECIFIC}/studio64.vmoptions" ]; then       VM_OPTIONS_FILE="${IDE_BIN_HOME}/${OS_SPECIFIC}/studio64.vmoptions";     fi;   fi
+  380    if [ -r "${IDE_HOME}.vmoptions" ]; then     USER_VM_OPTIONS_FILE="${IDE_HOME}.vmoptions";   elif [ -r "${CONFIG_HOME}/Google/AndroidStudio2022.1/studio64.vmoptions" ]; then     USER_VM_OPTIONS_FILE="${CONFIG_HOME}/Google/AndroidStudio2022.1/studio64.vmoptions";   fi; fi
+  381  VM_OPTIONS=""
+  382  USER_GC=""
+  383  if [ -n "$USER_VM_OPTIONS_FILE" ]; then   grep -E -q -e "-XX:\+.*GC" "$USER_VM_OPTIONS_FILE" && USER_GC="yes"; fi
+  384  if [ -n "$VM_OPTIONS_FILE" ] || [ -n "$USER_VM_OPTIONS_FILE" ]; then   if [ -z "$USER_GC" ] || [ -z "$VM_OPTIONS_FILE" ]; then     VM_OPTIONS=$(cat "$VM_OPTIONS_FILE" "$USER_VM_OPTIONS_FILE" 2> /dev/null | grep -E -v -e "^#.*");   else     VM_OPTIONS=$({ grep -E -v -e "-XX:\+Use.*GC" "$VM_OPTIONS_FILE"; cat "$USER_VM_OPTIONS_FILE"; } 2> /dev/null | grep -E -v -e "^#.*");   fi; else   message "Cannot find a VM options file"; fi
+  385  CLASS_PATH="$IDE_HOME/lib/util.jar"
+  386  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/app.jar"
+  387  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/3rd-party-rt.jar"
+  388  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jna.jar"
+  389  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/platform-statistics-devkit.jar"
+  390  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jps-model.jar"
+  391  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-core.jar"
+  392  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-framework.jar"
+  393  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/stats.jar"
+  394  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/protobuf.jar"
+  395  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/external-system-rt.jar"
+  396  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/forms_rt.jar"
+  397  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/intellij-test-discovery.jar"
+  398  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-swing.jar"
+  399  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/annotations.jar"
+  400  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/groovy.jar"
+  401  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/annotations-java5.jar"
+  402  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/byte-buddy-agent.jar"
+  403  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/error-prone-annotations.jar"
+  404  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/externalProcess-rt.jar"
+  405  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/grpc-netty-shaded.jar"
+  406  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/idea_rt.jar"
+  407  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/intellij-coverage-agent-1.0.656.jar"
+  408  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/junit.jar"
+  409  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/junit4.jar"
+  410  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/lz4-java.jar"
+  411  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/platform-objectSerializer-annotations.jar"
+  412  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/pty4j.jar"
+  413  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-text.jar"
+  414  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/resources.jar"
+  415  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/util_rt.jar"
+  416  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/winp.jar"
+  417  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/ant/lib/ant.jar"
+  418  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/dbus-java-3.2.1.jar"
+  419  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/java-utils-1.0.6.jar"
+  420  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-unixsocket-0.23.jar"
+  421  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-ffi-2.1.10.jar"
+  422  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jffi-1.2.19.jar"
+  423  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jffi-1.2.19-native.jar"
+  424  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-7.1.jar"
+  425  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-commons-7.1.jar"
+  426  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-analysis-7.1.jar"
+  427  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-tree-7.1.jar"
+  428  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-util-7.1.jar"
+  429  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-a64asm-1.0.0.jar"
+  430  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-x86asm-1.0.2.jar"
+  431  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-constants-0.9.12.jar"
+  432  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-enxio-0.21.jar"
+  433  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-posix-3.0.50.jar"
+  434  # ---------------------------------------------------------------------
+  435  # Run the IDE.
+  436  # ---------------------------------------------------------------------
+  437  IFS="$(printf '\n\t')"
+  438  # shellcheck disable=SC2086
+  439  "$JAVA_BIN"   -classpath "$CLASS_PATH"   ${VM_OPTIONS}   "-XX:ErrorFile=$HOME/java_error_in_studio_%p.log"   "-XX:HeapDumpPath=$HOME/java_error_in_studio_.hprof"   "-Djb.vmOptionsFile=${USER_VM_OPTIONS_FILE:-${VM_OPTIONS_FILE}}"   ${IDE_PROPERTIES_PROPERTY}   -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader -Didea.strict.classpath=true -Didea.vendor.name=Google -Didea.paths.selector=AndroidStudio2022.1 -Didea.platform.prefix=AndroidStudio -Didea.jre.check=true -Dsplash=true   com.intellij.idea.Main   "$@"
+  440  #!/bin/sh
+  441  # Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+  442  # ---------------------------------------------------------------------
+  443  # Android Studio startup script.
+  444  # ---------------------------------------------------------------------
+  445  message() {   TITLE="Cannot start Android Studio";   if [ -n "$(command -v zenity)" ]; then     zenity --error --title="$TITLE" --text="$1" --no-wrap;   elif [ -n "$(command -v kdialog)" ]; then     kdialog --error "$1" --title "$TITLE";   elif [ -n "$(command -v notify-send)" ]; then     notify-send "ERROR: $TITLE" "$1";   elif [ -n "$(command -v xmessage)" ]; then     xmessage -center "ERROR: $TITLE: $1";   else     printf "ERROR: %s\n%s\n" "$TITLE" "$1";   fi; }
+  446  if [ -z "$(command -v uname)" ] || [ -z "$(command -v realpath)" ] || [ -z "$(command -v dirname)" ] || [ -z "$(command -v cat)" ] ||    [ -z "$(command -v egrep)" ]; then   TOOLS_MSG="Required tools are missing:";   for tool in uname realpath egrep dirname cat ; do      test -z "$(command -v $tool)" && TOOLS_MSG="$TOOLS_MSG $tool";   done;   message "$TOOLS_MSG (SHELL=$SHELL PATH=$PATH)";   exit 1; fi
+  447  # shellcheck disable=SC2034
+  448  GREP_OPTIONS=''
+  449  OS_TYPE=$(uname -s)
+  450  OS_ARCH=$(uname -m)
+  451  # ---------------------------------------------------------------------
+  452  # Ensure $IDE_HOME points to the directory where the IDE is installed.
+  453  # ---------------------------------------------------------------------
+  454  IDE_BIN_HOME=$(dirname "$(realpath "$0")")
+  455  IDE_HOME=$(dirname "${IDE_BIN_HOME}")
+  456  CONFIG_HOME="${XDG_CONFIG_HOME:-${HOME}/.config}"
+  457  # ---------------------------------------------------------------------
+  458  # Locate a JRE installation directory command -v will be used to run the IDE.
+  459  # Try (in order): $STUDIO_JDK, .../studio.jdk, .../jbr, $JDK_HOME, $JAVA_HOME, "java" in $PATH.
+  460  # ---------------------------------------------------------------------
+  461  JRE=""
+  462  # shellcheck disable=SC2154
+  463  if [ -n "$STUDIO_JDK" ] && [ -x "$STUDIO_JDK/bin/java" ]; then   JRE="$STUDIO_JDK"; fi
+  464  if [ -z "$JRE" ] && [ -s "${CONFIG_HOME}/Google/AndroidStudio2022.1/studio.jdk" ]; then   USER_JRE=$(cat "${CONFIG_HOME}/Google/AndroidStudio2022.1/studio.jdk");   if [ -x "$USER_JRE/bin/java" ]; then     JRE="$USER_JRE";   fi; fi
+  465  if [ -z "$JRE" ] && [ "$OS_TYPE" = "Linux" ] && [ "$OS_ARCH" = "x86_64" ] && [ -d "$IDE_HOME/jbr" ]; then   JRE="$IDE_HOME/jbr"; fi
+  466  # shellcheck disable=SC2153
+  467  if [ -z "$JRE" ]; then   if [ -n "$JDK_HOME" ] && [ -x "$JDK_HOME/bin/java" ]; then     JRE="$JDK_HOME";   elif [ -n "$JAVA_HOME" ] && [ -x "$JAVA_HOME/bin/java" ]; then     JRE="$JAVA_HOME";   fi; fi
+  468  if [ -z "$JRE" ]; then   JAVA_BIN=$(command -v java); else   JAVA_BIN="$JRE/bin/java"; fi
+  469  if [ -z "$JAVA_BIN" ] || [ ! -x "$JAVA_BIN" ]; then   message "No JRE found. Please make sure \$STUDIO_JDK, \$JDK_HOME, or \$JAVA_HOME point to valid JRE installation.";   exit 1; fi
+  470  # ---------------------------------------------------------------------
+  471  # Collect JVM options and IDE properties.
+  472  # ---------------------------------------------------------------------
+  473  IDE_PROPERTIES_PROPERTY=""
+  474  # shellcheck disable=SC2154
+  475  if [ -n "$STUDIO_PROPERTIES" ]; then   IDE_PROPERTIES_PROPERTY="-Didea.properties.file=$STUDIO_PROPERTIES"; fi
+  476  VM_OPTIONS_FILE=""
+  477  USER_VM_OPTIONS_FILE=""
+  478  # shellcheck disable=SC2154
+  479  if [ -n "$STUDIO_VM_OPTIONS" ] && [ -r "$STUDIO_VM_OPTIONS" ]; then
+  480    VM_OPTIONS_FILE="$STUDIO_VM_OPTIONS"; else
+  481    if [ -r "${IDE_BIN_HOME}/studio64.vmoptions" ]; then     VM_OPTIONS_FILE="${IDE_BIN_HOME}/studio64.vmoptions";   else     test "${OS_TYPE}" = "Darwin" && OS_SPECIFIC="mac" || OS_SPECIFIC="linux";     if [ -r "${IDE_BIN_HOME}/${OS_SPECIFIC}/studio64.vmoptions" ]; then       VM_OPTIONS_FILE="${IDE_BIN_HOME}/${OS_SPECIFIC}/studio64.vmoptions";     fi;   fi
+  482    if [ -r "${IDE_HOME}.vmoptions" ]; then     USER_VM_OPTIONS_FILE="${IDE_HOME}.vmoptions";   elif [ -r "${CONFIG_HOME}/Google/AndroidStudio2022.1/studio64.vmoptions" ]; then     USER_VM_OPTIONS_FILE="${CONFIG_HOME}/Google/AndroidStudio2022.1/studio64.vmoptions";   fi; fi
+  483  VM_OPTIONS=""
+  484  USER_GC=""
+  485  if [ -n "$USER_VM_OPTIONS_FILE" ]; then   grep -E -q -e "-XX:\+.*GC" "$USER_VM_OPTIONS_FILE" && USER_GC="yes"; fi
+  486  if [ -n "$VM_OPTIONS_FILE" ] || [ -n "$USER_VM_OPTIONS_FILE" ]; then   if [ -z "$USER_GC" ] || [ -z "$VM_OPTIONS_FILE" ]; then     VM_OPTIONS=$(cat "$VM_OPTIONS_FILE" "$USER_VM_OPTIONS_FILE" 2> /dev/null | grep -E -v -e "^#.*");   else     VM_OPTIONS=$({ grep -E -v -e "-XX:\+Use.*GC" "$VM_OPTIONS_FILE"; cat "$USER_VM_OPTIONS_FILE"; } 2> /dev/null | grep -E -v -e "^#.*");   fi; else   message "Cannot find a VM options file"; fi
+  487  CLASS_PATH="$IDE_HOME/lib/util.jar"
+  488  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/app.jar"
+  489  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/3rd-party-rt.jar"
+  490  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jna.jar"
+  491  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/platform-statistics-devkit.jar"
+  492  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jps-model.jar"
+  493  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-core.jar"
+  494  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-framework.jar"
+  495  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/stats.jar"
+  496  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/protobuf.jar"
+  497  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/external-system-rt.jar"
+  498  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/forms_rt.jar"
+  499  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/intellij-test-discovery.jar"
+  500  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-swing.jar"
+  501  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/annotations.jar"
+  502  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/groovy.jar"
+  503  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/annotations-java5.jar"
+  504  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/byte-buddy-agent.jar"
+  505  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/error-prone-annotations.jar"
+  506  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/externalProcess-rt.jar"
+  507  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/grpc-netty-shaded.jar"
+  508  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/idea_rt.jar"
+  509  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/intellij-coverage-agent-1.0.656.jar"
+  510  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/junit.jar"
+  511  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/junit4.jar"
+  512  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/lz4-java.jar"
+  513  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/platform-objectSerializer-annotations.jar"
+  514  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/pty4j.jar"
+  515  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-text.jar"
+  516  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/resources.jar"
+  517  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/util_rt.jar"
+  518  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/winp.jar"
+  519  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/ant/lib/ant.jar"
+  520  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/dbus-java-3.2.1.jar"
+  521  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/java-utils-1.0.6.jar"
+  522  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-unixsocket-0.23.jar"
+  523  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-ffi-2.1.10.jar"
+  524  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jffi-1.2.19.jar"
+  525  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jffi-1.2.19-native.jar"
+  526  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-7.1.jar"
+  527  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-commons-7.1.jar"
+  528  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-analysis-7.1.jar"
+  529  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-tree-7.1.jar"
+  530  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-util-7.1.jar"
+  531  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-a64asm-1.0.0.jar"
+  532  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-x86asm-1.0.2.jar"
+  533  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-constants-0.9.12.jar"
+  534  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-enxio-0.21.jar"
+  535  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-posix-3.0.50.jar"
+  536  # ---------------------------------------------------------------------
+  537  # Run the IDE.
+  538  # ---------------------------------------------------------------------
+  539  IFS="$(printf '\n\t')"
+  540  # shellcheck disable=SC2086
+  541  "$JAVA_BIN"   -classpath "$CLASS_PATH"   ${VM_OPTIONS}   "-XX:ErrorFile=$HOME/java_error_in_studio_%p.log"   "-XX:HeapDumpPath=$HOME/java_error_in_studio_.hprof"   "-Djb.vmOptionsFile=${USER_VM_OPTIONS_FILE:-${VM_OPTIONS_FILE}}"   ${IDE_PROPERTIES_PROPERTY}   -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader -Didea.strict.classpath=true -Didea.vendor.name=Google -Didea.paths.selector=AndroidStudio2022.1 -Didea.platform.prefix=AndroidStudio -Didea.jre.check=true -Dsplash=true   com.intellij.idea.Main   "$@"
+  542  #!/bin/sh
+  543  # Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+  544  # ---------------------------------------------------------------------
+  545  # Android Studio startup script.
+  546  # ---------------------------------------------------------------------
+  547  message() {   TITLE="Cannot start Android Studio";   if [ -n "$(command -v zenity)" ]; then     zenity --error --title="$TITLE" --text="$1" --no-wrap;   elif [ -n "$(command -v kdialog)" ]; then     kdialog --error "$1" --title "$TITLE";   elif [ -n "$(command -v notify-send)" ]; then     notify-send "ERROR: $TITLE" "$1";   elif [ -n "$(command -v xmessage)" ]; then     xmessage -center "ERROR: $TITLE: $1";   else     printf "ERROR: %s\n%s\n" "$TITLE" "$1";   fi; }
+  548  if [ -z "$(command -v uname)" ] || [ -z "$(command -v realpath)" ] || [ -z "$(command -v dirname)" ] || [ -z "$(command -v cat)" ] ||    [ -z "$(command -v egrep)" ]; then   TOOLS_MSG="Required tools are missing:";   for tool in uname realpath egrep dirname cat ; do      test -z "$(command -v $tool)" && TOOLS_MSG="$TOOLS_MSG $tool";   done;   message "$TOOLS_MSG (SHELL=$SHELL PATH=$PATH)";   exit 1; fi
+  549  # shellcheck disable=SC2034
+  550  GREP_OPTIONS=''
+  551  OS_TYPE=$(uname -s)
+  552  OS_ARCH=$(uname -m)
+  553  # ---------------------------------------------------------------------
+  554  # Ensure $IDE_HOME points to the directory where the IDE is installed.
+  555  # ---------------------------------------------------------------------
+  556  IDE_BIN_HOME=$(dirname "$(realpath "$0")")
+  557  IDE_HOME=$(dirname "${IDE_BIN_HOME}")
+  558  CONFIG_HOME="${XDG_CONFIG_HOME:-${HOME}/.config}"
+  559  # ---------------------------------------------------------------------
+  560  # Locate a JRE installation directory command -v will be used to run the IDE.
+  561  # Try (in order): $STUDIO_JDK, .../studio.jdk, .../jbr, $JDK_HOME, $JAVA_HOME, "java" in $PATH.
+  562  # ---------------------------------------------------------------------
+  563  JRE=""
+  564  # shellcheck disable=SC2154
+  565  if [ -n "$STUDIO_JDK" ] && [ -x "$STUDIO_JDK/bin/java" ]; then   JRE="$STUDIO_JDK"; fi
+  566  if [ -z "$JRE" ] && [ -s "${CONFIG_HOME}/Google/AndroidStudio2022.1/studio.jdk" ]; then   USER_JRE=$(cat "${CONFIG_HOME}/Google/AndroidStudio2022.1/studio.jdk");   if [ -x "$USER_JRE/bin/java" ]; then     JRE="$USER_JRE";   fi; fi
+  567  if [ -z "$JRE" ] && [ "$OS_TYPE" = "Linux" ] && [ "$OS_ARCH" = "x86_64" ] && [ -d "$IDE_HOME/jbr" ]; then   JRE="$IDE_HOME/jbr"; fi
+  568  # shellcheck disable=SC2153
+  569  if [ -z "$JRE" ]; then   if [ -n "$JDK_HOME" ] && [ -x "$JDK_HOME/bin/java" ]; then     JRE="$JDK_HOME";   elif [ -n "$JAVA_HOME" ] && [ -x "$JAVA_HOME/bin/java" ]; then     JRE="$JAVA_HOME";   fi; fi
+  570  if [ -z "$JRE" ]; then   JAVA_BIN=$(command -v java); else   JAVA_BIN="$JRE/bin/java"; fi
+  571  if [ -z "$JAVA_BIN" ] || [ ! -x "$JAVA_BIN" ]; then   message "No JRE found. Please make sure \$STUDIO_JDK, \$JDK_HOME, or \$JAVA_HOME point to valid JRE installation.";   exit 1; fi
+  572  # ---------------------------------------------------------------------
+  573  # Collect JVM options and IDE properties.
+  574  # ---------------------------------------------------------------------
+  575  IDE_PROPERTIES_PROPERTY=""
+  576  # shellcheck disable=SC2154
+  577  if [ -n "$STUDIO_PROPERTIES" ]; then   IDE_PROPERTIES_PROPERTY="-Didea.properties.file=$STUDIO_PROPERTIES"; fi
+  578  VM_OPTIONS_FILE=""
+  579  USER_VM_OPTIONS_FILE=""
+  580  # shellcheck disable=SC2154
+  581  if [ -n "$STUDIO_VM_OPTIONS" ] && [ -r "$STUDIO_VM_OPTIONS" ]; then
+  582    VM_OPTIONS_FILE="$STUDIO_VM_OPTIONS"; else
+  583    if [ -r "${IDE_BIN_HOME}/studio64.vmoptions" ]; then     VM_OPTIONS_FILE="${IDE_BIN_HOME}/studio64.vmoptions";   else     test "${OS_TYPE}" = "Darwin" && OS_SPECIFIC="mac" || OS_SPECIFIC="linux";     if [ -r "${IDE_BIN_HOME}/${OS_SPECIFIC}/studio64.vmoptions" ]; then       VM_OPTIONS_FILE="${IDE_BIN_HOME}/${OS_SPECIFIC}/studio64.vmoptions";     fi;   fi
+  584    if [ -r "${IDE_HOME}.vmoptions" ]; then     USER_VM_OPTIONS_FILE="${IDE_HOME}.vmoptions";   elif [ -r "${CONFIG_HOME}/Google/AndroidStudio2022.1/studio64.vmoptions" ]; then     USER_VM_OPTIONS_FILE="${CONFIG_HOME}/Google/AndroidStudio2022.1/studio64.vmoptions";   fi; fi
+  585  VM_OPTIONS=""
+  586  USER_GC=""
+  587  if [ -n "$USER_VM_OPTIONS_FILE" ]; then   grep -E -q -e "-XX:\+.*GC" "$USER_VM_OPTIONS_FILE" && USER_GC="yes"; fi
+  588  if [ -n "$VM_OPTIONS_FILE" ] || [ -n "$USER_VM_OPTIONS_FILE" ]; then   if [ -z "$USER_GC" ] || [ -z "$VM_OPTIONS_FILE" ]; then     VM_OPTIONS=$(cat "$VM_OPTIONS_FILE" "$USER_VM_OPTIONS_FILE" 2> /dev/null | grep -E -v -e "^#.*");   else     VM_OPTIONS=$({ grep -E -v -e "-XX:\+Use.*GC" "$VM_OPTIONS_FILE"; cat "$USER_VM_OPTIONS_FILE"; } 2> /dev/null | grep -E -v -e "^#.*");   fi; else   message "Cannot find a VM options file"; fi
+  589  CLASS_PATH="$IDE_HOME/lib/util.jar"
+  590  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/app.jar"
+  591  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/3rd-party-rt.jar"
+  592  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jna.jar"
+  593  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/platform-statistics-devkit.jar"
+  594  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jps-model.jar"
+  595  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-core.jar"
+  596  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-framework.jar"
+  597  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/stats.jar"
+  598  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/protobuf.jar"
+  599  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/external-system-rt.jar"
+  600  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/forms_rt.jar"
+  601  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/intellij-test-discovery.jar"
+  602  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-swing.jar"
+  603  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/annotations.jar"
+  604  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/groovy.jar"
+  605  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/annotations-java5.jar"
+  606  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/byte-buddy-agent.jar"
+  607  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/error-prone-annotations.jar"
+  608  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/externalProcess-rt.jar"
+  609  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/grpc-netty-shaded.jar"
+  610  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/idea_rt.jar"
+  611  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/intellij-coverage-agent-1.0.656.jar"
+  612  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/junit.jar"
+  613  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/junit4.jar"
+  614  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/lz4-java.jar"
+  615  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/platform-objectSerializer-annotations.jar"
+  616  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/pty4j.jar"
+  617  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-text.jar"
+  618  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/resources.jar"
+  619  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/util_rt.jar"
+  620  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/winp.jar"
+  621  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/ant/lib/ant.jar"
+  622  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/dbus-java-3.2.1.jar"
+  623  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/java-utils-1.0.6.jar"
+  624  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-unixsocket-0.23.jar"
+  625  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-ffi-2.1.10.jar"
+  626  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jffi-1.2.19.jar"
+  627  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jffi-1.2.19-native.jar"
+  628  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-7.1.jar"
+  629  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-commons-7.1.jar"
+  630  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-analysis-7.1.jar"
+  631  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-tree-7.1.jar"
+  632  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-util-7.1.jar"
+  633  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-a64asm-1.0.0.jar"
+  634  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-x86asm-1.0.2.jar"
+  635  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-constants-0.9.12.jar"
+  636  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-enxio-0.21.jar"
+  637  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-posix-3.0.50.jar"
+  638  # ---------------------------------------------------------------------
+  639  # Run the IDE.
+  640  # ---------------------------------------------------------------------
+  641  IFS="$(printf '\n\t')"
+  642  # shellcheck disable=SC2086
+  643  "$JAVA_BIN"   -classpath "$CLASS_PATH"   ${VM_OPTIONS}   "-XX:ErrorFile=$HOME/java_error_in_studio_%p.log"   "-XX:HeapDumpPath=$HOME/java_error_in_studio_.hprof"   "-Djb.vmOptionsFile=${USER_VM_OPTIONS_FILE:-${VM_OPTIONS_FILE}}"   ${IDE_PROPERTIES_PROPERTY}   -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader -Didea.strict.classpath=true -Didea.vendor.name=Google -Didea.paths.selector=AndroidStudio2022.1 -Didea.platform.prefix=AndroidStudio -Didea.jre.check=true -Dsplash=true   com.intellij.idea.Main   "$@"
+  644  npx react-native doctor
+  645  expo eject
+  646  npx react-native doctor
+  647  sudo dnf install -y zlib.i686 ncurses-libs.i686 bzip2-libs.i686
+  648  cd /temp
+  649  mkdir /temp
+  650  mkdir install_folder_android_studio
+  651  cd install_folder_android_studio/
+  652  sudo mv android-studio /opt/
+  653  sudo ln -sf /opt/android-studio/bin/studio.sh /usr/local/bin/android-studio
+  654  sudo vi /usr/share/applications/android-studio.desktop
+  655  sudo nano /usr/share/applications/android-studio.desktop
+  656  sudo nano ~/.bashrc
+  657  #!/bin/sh
+  658  # Copyright 2000-2021 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license that can be found in the LICENSE file.
+  659  # ---------------------------------------------------------------------
+  660  # Android Studio startup script.
+  661  # ---------------------------------------------------------------------
+  662  message() {   TITLE="Cannot start Android Studio";   if [ -n "$(command -v zenity)" ]; then     zenity --error --title="$TITLE" --text="$1" --no-wrap;   elif [ -n "$(command -v kdialog)" ]; then     kdialog --error "$1" --title "$TITLE";   elif [ -n "$(command -v notify-send)" ]; then     notify-send "ERROR: $TITLE" "$1";   elif [ -n "$(command -v xmessage)" ]; then     xmessage -center "ERROR: $TITLE: $1";   else     printf "ERROR: %s\n%s\n" "$TITLE" "$1";   fi; }
+  663  if [ -z "$(command -v uname)" ] || [ -z "$(command -v realpath)" ] || [ -z "$(command -v dirname)" ] || [ -z "$(command -v cat)" ] ||    [ -z "$(command -v egrep)" ]; then   TOOLS_MSG="Required tools are missing:";   for tool in uname realpath egrep dirname cat ; do      test -z "$(command -v $tool)" && TOOLS_MSG="$TOOLS_MSG $tool";   done;   message "$TOOLS_MSG (SHELL=$SHELL PATH=$PATH)";   exit 1; fi
+  664  # shellcheck disable=SC2034
+  665  GREP_OPTIONS=''
+  666  OS_TYPE=$(uname -s)
+  667  OS_ARCH=$(uname -m)
+  668  # ---------------------------------------------------------------------
+  669  # Ensure $IDE_HOME points to the directory where the IDE is installed.
+  670  # ---------------------------------------------------------------------
+  671  IDE_BIN_HOME=$(dirname "$(realpath "$0")")
+  672  IDE_HOME=$(dirname "${IDE_BIN_HOME}")
+  673  CONFIG_HOME="${XDG_CONFIG_HOME:-${HOME}/.config}"
+  674  # ---------------------------------------------------------------------
+  675  # Locate a JRE installation directory command -v will be used to run the IDE.
+  676  # Try (in order): $STUDIO_JDK, .../studio.jdk, .../jbr, $JDK_HOME, $JAVA_HOME, "java" in $PATH.
+  677  # ---------------------------------------------------------------------
+  678  JRE=""
+  679  # shellcheck disable=SC2154
+  680  if [ -n "$STUDIO_JDK" ] && [ -x "$STUDIO_JDK/bin/java" ]; then   JRE="$STUDIO_JDK"; fi
+  681  if [ -z "$JRE" ] && [ -s "${CONFIG_HOME}/Google/AndroidStudio2022.1/studio.jdk" ]; then   USER_JRE=$(cat "${CONFIG_HOME}/Google/AndroidStudio2022.1/studio.jdk");   if [ -x "$USER_JRE/bin/java" ]; then     JRE="$USER_JRE";   fi; fi
+  682  if [ -z "$JRE" ] && [ "$OS_TYPE" = "Linux" ] && [ "$OS_ARCH" = "x86_64" ] && [ -d "$IDE_HOME/jbr" ]; then   JRE="$IDE_HOME/jbr"; fi
+  683  # shellcheck disable=SC2153
+  684  if [ -z "$JRE" ]; then   if [ -n "$JDK_HOME" ] && [ -x "$JDK_HOME/bin/java" ]; then     JRE="$JDK_HOME";   elif [ -n "$JAVA_HOME" ] && [ -x "$JAVA_HOME/bin/java" ]; then     JRE="$JAVA_HOME";   fi; fi
+  685  if [ -z "$JRE" ]; then   JAVA_BIN=$(command -v java); else   JAVA_BIN="$JRE/bin/java"; fi
+  686  if [ -z "$JAVA_BIN" ] || [ ! -x "$JAVA_BIN" ]; then   message "No JRE found. Please make sure \$STUDIO_JDK, \$JDK_HOME, or \$JAVA_HOME point to valid JRE installation.";   exit 1; fi
+  687  # ---------------------------------------------------------------------
+  688  # Collect JVM options and IDE properties.
+  689  # ---------------------------------------------------------------------
+  690  IDE_PROPERTIES_PROPERTY=""
+  691  # shellcheck disable=SC2154
+  692  if [ -n "$STUDIO_PROPERTIES" ]; then   IDE_PROPERTIES_PROPERTY="-Didea.properties.file=$STUDIO_PROPERTIES"; fi
+  693  VM_OPTIONS_FILE=""
+  694  USER_VM_OPTIONS_FILE=""
+  695  # shellcheck disable=SC2154
+  696  if [ -n "$STUDIO_VM_OPTIONS" ] && [ -r "$STUDIO_VM_OPTIONS" ]; then
+  697    VM_OPTIONS_FILE="$STUDIO_VM_OPTIONS"; else
+  698    if [ -r "${IDE_BIN_HOME}/studio64.vmoptions" ]; then     VM_OPTIONS_FILE="${IDE_BIN_HOME}/studio64.vmoptions";   else     test "${OS_TYPE}" = "Darwin" && OS_SPECIFIC="mac" || OS_SPECIFIC="linux";     if [ -r "${IDE_BIN_HOME}/${OS_SPECIFIC}/studio64.vmoptions" ]; then       VM_OPTIONS_FILE="${IDE_BIN_HOME}/${OS_SPECIFIC}/studio64.vmoptions";     fi;   fi
+  699    if [ -r "${IDE_HOME}.vmoptions" ]; then     USER_VM_OPTIONS_FILE="${IDE_HOME}.vmoptions";   elif [ -r "${CONFIG_HOME}/Google/AndroidStudio2022.1/studio64.vmoptions" ]; then     USER_VM_OPTIONS_FILE="${CONFIG_HOME}/Google/AndroidStudio2022.1/studio64.vmoptions";   fi; fi
+  700  VM_OPTIONS=""
+  701  USER_GC=""
+  702  if [ -n "$USER_VM_OPTIONS_FILE" ]; then   grep -E -q -e "-XX:\+.*GC" "$USER_VM_OPTIONS_FILE" && USER_GC="yes"; fi
+  703  if [ -n "$VM_OPTIONS_FILE" ] || [ -n "$USER_VM_OPTIONS_FILE" ]; then   if [ -z "$USER_GC" ] || [ -z "$VM_OPTIONS_FILE" ]; then     VM_OPTIONS=$(cat "$VM_OPTIONS_FILE" "$USER_VM_OPTIONS_FILE" 2> /dev/null | grep -E -v -e "^#.*");   else     VM_OPTIONS=$({ grep -E -v -e "-XX:\+Use.*GC" "$VM_OPTIONS_FILE"; cat "$USER_VM_OPTIONS_FILE"; } 2> /dev/null | grep -E -v -e "^#.*");   fi; else   message "Cannot find a VM options file"; fi
+  704  CLASS_PATH="$IDE_HOME/lib/util.jar"
+  705  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/app.jar"
+  706  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/3rd-party-rt.jar"
+  707  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jna.jar"
+  708  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/platform-statistics-devkit.jar"
+  709  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jps-model.jar"
+  710  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-core.jar"
+  711  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-framework.jar"
+  712  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/stats.jar"
+  713  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/protobuf.jar"
+  714  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/external-system-rt.jar"
+  715  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/forms_rt.jar"
+  716  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/intellij-test-discovery.jar"
+  717  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-swing.jar"
+  718  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/annotations.jar"
+  719  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/groovy.jar"
+  720  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/annotations-java5.jar"
+  721  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/byte-buddy-agent.jar"
+  722  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/error-prone-annotations.jar"
+  723  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/externalProcess-rt.jar"
+  724  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/grpc-netty-shaded.jar"
+  725  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/idea_rt.jar"
+  726  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/intellij-coverage-agent-1.0.656.jar"
+  727  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/junit.jar"
+  728  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/junit4.jar"
+  729  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/lz4-java.jar"
+  730  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/platform-objectSerializer-annotations.jar"
+  731  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/pty4j.jar"
+  732  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/rd-text.jar"
+  733  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/resources.jar"
+  734  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/util_rt.jar"
+  735  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/winp.jar"
+  736  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/ant/lib/ant.jar"
+  737  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/dbus-java-3.2.1.jar"
+  738  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/java-utils-1.0.6.jar"
+  739  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-unixsocket-0.23.jar"
+  740  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-ffi-2.1.10.jar"
+  741  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jffi-1.2.19.jar"
+  742  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jffi-1.2.19-native.jar"
+  743  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-7.1.jar"
+  744  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-commons-7.1.jar"
+  745  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-analysis-7.1.jar"
+  746  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-tree-7.1.jar"
+  747  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/asm-util-7.1.jar"
+  748  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-a64asm-1.0.0.jar"
+  749  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-x86asm-1.0.2.jar"
+  750  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-constants-0.9.12.jar"
+  751  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-enxio-0.21.jar"
+  752  CLASS_PATH="$CLASS_PATH:$IDE_HOME/lib/jnr-posix-3.0.50.jar"
+  753  # ---------------------------------------------------------------------
+  754  # Run the IDE.
+  755  # ---------------------------------------------------------------------
+  756  IFS="$(printf '\n\t')"
+  757  # shellcheck disable=SC2086
+  758  "$JAVA_BIN"   -classpath "$CLASS_PATH"   ${VM_OPTIONS}   "-XX:ErrorFile=$HOME/java_error_in_studio_%p.log"   "-XX:HeapDumpPath=$HOME/java_error_in_studio_.hprof"   "-Djb.vmOptionsFile=${USER_VM_OPTIONS_FILE:-${VM_OPTIONS_FILE}}"   ${IDE_PROPERTIES_PROPERTY}   -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader -Didea.strict.classpath=true -Didea.vendor.name=Google -Didea.paths.selector=AndroidStudio2022.1 -Didea.platform.prefix=AndroidStudio -Didea.jre.check=true -Dsplash=true   com.intellij.idea.Main   "$@"
+  759  sudo rm /home/breakfastdeep/.android/avd/Resizable_Experimental_API_33.avd/*lock
+  760  sudo rm /home/breakfastdeep/.android/avd/Resizable_Experimental_API_33.avd/*.lock
+  761  sudo dnf remove android-studio
+  762  sudo cd /opt/
+  763  ls
+  764   cd /opt/
+  765  ls
+  766  rm -r android-studio/
+  767  sudo rm -r android-studio/
+  768  sudo rm /usr/local/bin/android-studio
+  769  cd /usr/local/bin/
+  770  ls
+  771  sudo rm /usr/share/applications/android-studio.desktop
+  772  sudo yum install zlib.i686 ncurses-libs.i686 bzip2-libs.i686
+  773  npm start
+  774  sudo npm i -g react-native
+  775  npm start
+  776  cd DoneWithIt/
+  777  ls
+  778  cd ..
+  779  rm -r DoneWithIt/
+  780  sudo rm -r DoneWithIt/
+  781  create-react-native-app
+  782  npm i -g expo-cli
+  783  expo init DoWithIt
+  784  npm start
+  785  sudo npm start
+  786  sudo npm i -g expo-cli
+  787  sudo npm audit fix --force
+  788  sudo npm start
+  789  sudo npm run
+  790  npm run
+  791  sudo npm start
+  792  expo start
+  793  clear
+  794  expo start
+  795  npm start
+  796  expo start -a
+  797  npx expo
+  798  clear
+  799  npx expo
+  800  touch /etc/yum.repos.d/notion-repackaged.repo
+  801  sudo touch /etc/yum.repos.d/notion-repackaged.repo
+  802  touch /etc/yum.repos.d/notion-repackaged.repo
+  803  sudo nano /etc/yum.repos.d/notion-repackaged.repo
+  804  sudo dnf install notion-app-enhanced
+  805  npm start
+  806  npm run start:dev
+  807  npm run start
+  808  npm install -g eas-cli
+  809  npm start
+  810  npm start#
+  811  npm start
+  812  npm stop
+  813  npm
+  814  npm-stop
+  815  npm-start
+  816  npm start
+  817  npx expo install expo-dev-client
+  818  npm audit fix --force
+  819  eas build --profile development
+  820  npx expo start --dev-client
+  821  expo init
+  822  expo update
+  823  expo start
+  824  eas build --profile development
+  825  npx expo start --dev-client
+  826  expo start --dev-client
+  827  expo start
+  828  react native: Stop packager
+  829  expo start
+  830  sudo killall node
+  831  expo start
+  832  npm i -g react-native-web react-dom
+  833  sudo npm i -g react-native-web react-dom
+  834  expo start
+  835  npm install
+  836  sudo npm install
+  837  npm audit fix --force
+  838  npm start
+  839  npx expo install @expo/webpack-config@^0.17.2
+  840  expo start
+  841  cd /bin/
+  842  ls
+  843  clear
+  844  ./webstorm.sh
+  845  chmod +x ./webstorm.sh
+  846  sudo nano ~/.bashrc
+  847  sudo nano ~/.bash_profile
+  848  sudo gedir ~/.bash_profile
+  849  sudo gedit ~/.bash_profile
+  850  sudo kwrite ~/.bash_profile
+  851  kwrite ~/.bash_profile
+  852  sudo nano ~/.bash_profile
+  853  npm install -g react-devtools
+  854  sudo npm install -g react-devtools
+  855  chmod +x webstorm.sh
+  856  ./webstorm.sh
+  857  sudo rpm --import https://packagecloud.io/AtomEditor/atom/gpgkey
+  858  sudo sh -c 'echo -e "[Atom]\nname=Atom Editor\nbaseurl=https://packagecloud.io/AtomEditor/atom/el/7/\$basearch\nenabled=1\ngpgcheck=0\nrepo_gpgcheck=1\ngpgkey=https://packagecloud.io/AtomEditor/atom/gpgkey" > /etc/yum.repos.d/atom.repo'
+  859  sudo dnf install atom
+  860  apm install docblockr
+  861  apm view react
+  862  sudo npm install -g react-devtools
+  863  clear
+  864  react-devtools
+  865  npx react-native log-ios
+  866  npx react-native log-android
+  867  npx react-native log-ios
+  868  cd ~
+  869  cd DoWithIt/
+  870  npx react-native log-ios
+  871  npx react-native log-android
+  872  react-devtools
+  873  npm start
+  874  sudo npm install -g @expo/webpack-config
+  875  npm start
+  876  npm audit fix --force
+  877  npm start
+  878  code .
+  879  npm start
+  880  sudo rm /home/breakfastdeep/.android/avd/Pixel_3_API_33.avd/*.lock
+  881  npm start
+  882  sudo cp /home/breakfastdeep/R20230223-135807.WAV .
+  883  sudo cp R20230223-135807.WAV /home/breakfastdeep/
+  884  sudo cp R20230223-135807.WAV /run/user/1000/7c949ac9ea1164c8/WD-Elements/
+  885  npm i @react-native-community/hooks
+  886  sudo npm i @react-native-community/hooks
+  887  sudo npm i -g @react-native-community/hooks
+  888  npm start
+  889  npm audit fix --force
+  890  npm start
+  891  "@react-native-community/hooks"
+  892   yarn add @react-native-community/hooks
+  893  yarn add @react-native-community/hooks
+  894  npm start
+  895  npx expo install expo-dev-client@~2.1.3 react@18.2.0 react-native@0.71.3
+  896  npm start
+  897  yarn add react-native-use-dimensions
+  898  npm start
+  899  expo start -a
+  900  npx expo install expo-screen-orientation
+  901  npm start
+  902  expo start -a
+  903  electron
+  904  electron ./codeWithMoshDownloader.pdb
+  905  npm start codeWithMoshDownloader.pdb 
+  906  yarn add electron@v23.1.1
+  907  sudo snap install overleaf
+  908  flatpak
+  909  cd ..
+  910  expo init Hochzeit-App
+  911  expo init Wedding-App
+  912  cd Wedding-App/
+  913  git config --global user.name "Volkan Köhle"
+  914  git config --global user.email muhteremking@gmail.com
+  915  expo start -a
+  916  code .
+  917  expo start -a
+  918  yarn add react-native-root-toast
+  919  yarn add  react-native-root-siblings
+  920  expo start -a
+  921  yarn remove react-native-root-siblings
+  922  expo start -a
+  923  yarn remove react-native-root-toast
+  924  yarn add react-native-toast-message
+  925  expo start -a
+  926  adb logcat :E
+  927  adb logcat *:E
+  928  yarn add react-native-action-button --save
+  929  yarn add react-native-vector-icons --save
+  930  yarn remove react-native-action-button --save
+  931  yarn remove react-native-vector-icons --save
+  932  yarn add react-native-paper
+  933  expo start
+  934  expo start -a
+  935  npm install -g expo-cli
+  936  sudo npm install -g expo-cli
+  937  expo start -a
+  938  yarn add @react-navigation/bottom-tabs
+  939  expo start -a
+  940  yarn add expo-location
+  941  expo start -a
+  942  yarn add expo-image-picker
+  943  expo start -a
+  944  npm install react-native-calendars --save
+  945  yarn add  react-native-calendars --save
+  946  expo start -a
+  947  expo doctor --fix-dependencies
+  948  yarn add expo-cli
+  949  expo start -a
+  950  sudo npm install -g expo-cli
+  951  sudo npm install -g npm@9.6.2
+  952    npm audit fix
+  953  sudo npm audit fix --force
+  954  expo start -a
+  955  yarn-audit-fix
+  956  npm i yarn-audit-fix
+  957  yarn-audit-fix
+  958  yarn add yarn-audit-fix -D
+  959  sudo yarn add yarn-audit-fix -D
+  960  yarn-audit-fix
+  961  yarn yarn-audit-fix
+  962  yarn yarn-audit-fix --force
+  963  sudo yarn yarn-audit-fix --force
+  964  expo start -a
+  965  [Bclean
+  966  clean
+  967  expo start -a
+  968  yarn add react-native-modal-datetime-picker
+  969  expo start -a
+  970  yarn remove  react-native-modal-datetime-picker
+  971  sudo yarn remove  react-native-modal-datetime-picker
+  972  sudo yarn add @react-native-community/datetimepicker
+  973  expo start -a
+  974  yarn add react-native-modal-datetime-picker
+  975  sudo yarn add react-native-modal-datetime-picker
+  976  expo start -a
+  977  expo doctor --fix-dependencies
+  978  sudo expo doctor --fix-dependencies
+  979  expo start -a
+  980  sudo yarn add react-native-vector-icons
+  981  expo start -a
+  982  yarn yarn-upgrade
+  983  yarn-upgrade-all
+  984  sudo yarn yarn-upgrade-all
+  985  expo start -a
+  986  sudo expo doctor --fix-dependencies
+  987  expo start -a
+  988  sudo yarn add react-native-paper-dropdown~
+  989  npm i react-native-paper-dropdown
+  990  sudo npm i react-native-paper-dropdown
+  991  sudo yarn add react-native-paper-dropdown~
+  992  sudo yarn add react-native-paper-dropdown
+  993  expo start -a
+  994  history > output.txt

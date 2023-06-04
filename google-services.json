@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "980083023843",
+    "project_id": "wedding-app-9edf3",
+    "storage_bucket": "wedding-app-9edf3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980083023843:android:4b2decfaf2c741f807cad6",
+        "android_client_info": {
+          "package_name": "com.cambazz.wedding"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980083023843-12uk3uavsqdrulhgcc31ntq5hnpvffff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cambazz.wedding",
+            "certificate_hash": "c605e8cb3f9a32278814e7bfefee8ec1a7a59385"
+          }
+        },
+        {
+          "client_id": "980083023843-5900j3ej9houmsrcfcl2jo5vj51735ed.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cambazz.wedding",
+            "certificate_hash": "81710e40393d63b3103162adfa1c6201bf29f9db"
+          }
+        },
+        {
+          "client_id": "980083023843-vthoarcm8vi5sdrm0ahtp341jamkkrn7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRl_o9eHI7DYXRZw1u3F8jBZeLNyukN8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980083023843-vthoarcm8vi5sdrm0ahtp341jamkkrn7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "980083023843-l45toiqmqflhvasdd7kkr54n182g6ahk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cambazz.wedding"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

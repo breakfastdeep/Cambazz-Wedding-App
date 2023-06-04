@@ -1,0 +1,60 @@
+rrximport LoginScreen from "./app/screens/LoginScreen";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import React, { useState, useEffect } from "react";
+import Toast from "react-native-toast-message";
+
+//adding firebase libraries
+
+import { auth } from "./app/config/firebase/firebase";
+import DashboardNavigator from "./app/screens/DashboardNavigator";
+
+const Stack = createStackNavigator();
+function App() {
+  const [initializing, setInitializing] = useState(true);
+  const [user, setUser] = useState();
+
+  //Handle user state changes
+  function onAuthStateChanged(user) {
+    setUser(user);
+    if (initializing) setInitializing(false);
+  }
+
+  //firebase
+  useEffect(() => {
+    const subscriber = auth.onAuthStateChanged(onAuthStateChanged);
+    return subscriber;
+  }, []);
+
+  if (initializing) return null;
+
+  if (!user) {
+    return (
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
+    );
+  }
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Dashboard"
+        component={DashboardNavigator}
+        options={{ headerShown: false }}
+      />
+    </Stack.Navigator>
+  );
+}
+
+export default () => {
+  return (
+    <NavigationContainer>
+      <App />
+      <Toast />
+    </NavigationContainer>
+  );
+};
