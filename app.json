@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -21,12 +23,16 @@
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-
       "package": "com.cambazz.wedding"
     },
     "web": {
       "favicon": "./app/assets/favicon.png",
       "googleServicesFile": "./google-services.json"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "061ec02b-5d7c-4c75-bd7b-6771d9db9c3b"
+      }
     }
   }
 }
