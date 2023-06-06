@@ -133,7 +133,7 @@ function App() {
   }, []);
 
   if (initializing) return null;
-
+  /*
   if (!user) {
     return (
       <Stack.Navigator>
@@ -145,7 +145,7 @@ function App() {
       </Stack.Navigator>
     );
   }
-
+*/
   return (
     <Stack.Navigator>
       <Stack.Screen

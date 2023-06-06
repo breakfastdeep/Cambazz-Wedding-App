@@ -1,14 +1,14 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn remove @react-native-firebase/firestore
+  /usr/bin/node-18 /usr/bin/yarnpkg add typescript@^4.9.4 @types/react@~18.0.27
 
 PATH: 
-  /home/breakfastdeep/.opam/default/bin:/home/breakfastdeep/.opam/default/bin:/home/breakfastdeep/.local/bin:/home/breakfastdeep/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/var/lib/snapd/snap/bin
+  /home/breakfastdeep/Cambazz-Wedding-App/node_modules/.bin:/home/breakfastdeep/Cambazz-Wedding-App/node_modules/.bin:/home/breakfastdeep/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/home/breakfastdeep/.opam/default/bin:/home/breakfastdeep/.opam/default/bin:/home/breakfastdeep/.local/bin:/home/breakfastdeep/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/var/lib/snapd/snap/bin
 
 Yarn version: 
   1.22.19
 
 Node version: 
-  18.12.1
+  18.16.0
 
 Platform: 
   linux x64
@@ -33,6 +33,7 @@ npm manifest:
       "@expo/vector-icons": "^13.0.0",
       "@hookform/resolvers": "^3.0.0",
       "@react-native-community/datetimepicker": "6.7.3",
+      "@react-native-firebase/app": "^17.5.0",
       "@react-native-firebase/messaging": "^17.5.0",
       "@react-navigation/bottom-tabs": "^6.5.7",
       "@react-navigation/native": "^6.1.6",
@@ -42,7 +43,7 @@ npm manifest:
       "doctor": "^0.3.0",
       "expo": "^48.0.9",
       "expo-constants": "^14.2.1",
-      "expo-dev-client": "~2.2.1",
+      "expo-dev-client": "^2.2.1",
       "expo-device": "~5.2.1",
       "expo-image-picker": "^14.1.1",
       "expo-location": "^15.1.1",
@@ -56,7 +57,7 @@ npm manifest:
       "react": "^18.2.0",
       "react-hook-form": "^7.43.9",
       "react-native": "0.71.8",
-      "react-native-calendars": "^1.1294.0",
+      "react-native-calendars": "^1.1298.0",
       "react-native-date-picker": "^4.2.10",
       "react-native-gesture-handler": "~2.9.0",
       "react-native-modal": "^13.0.1",
@@ -2411,11 +2412,6 @@ Lockfile:
       opencollective-postinstall "^2.0.1"
       superstruct "^0.6.2"
   
-  "@react-native-firebase/firestore@^17.5.0":
-    version "17.5.0"
-    resolved "https://registry.yarnpkg.com/@react-native-firebase/firestore/-/firestore-17.5.0.tgz#f0b1edd66b3678743f18ba9240d335d53141cc91"
-    integrity sha512-6pfvp2x28parK3F2CvL6dGketzl8cPspjoE/SsSWem7EhtCluDwCT+qZjPJgJXyEHLhJVtnPHkHOHQGzH3he0Q==
-  
   "@react-native-firebase/messaging@^17.5.0":
     version "17.5.0"
     resolved "https://registry.yarnpkg.com/@react-native-firebase/messaging/-/messaging-17.5.0.tgz#9c6db50423c67760dd61e553189187b9e5a2b75e"
@@ -4592,7 +4588,7 @@ Lockfile:
       "@expo/config" "~8.0.0"
       uuid "^3.3.2"
   
-  expo-dev-client@~2.2.1:
+  expo-dev-client@^2.2.1:
     version "2.2.1"
     resolved "https://registry.yarnpkg.com/expo-dev-client/-/expo-dev-client-2.2.1.tgz#3abdb875e9c9ed30e1f6dadc2f80b392d15b1c1e"
     integrity sha512-BDhKyni82LiT6PypgBns1/FLqo3cGDBluaj4/Pojx9P7x9iwOFcesepO8r6BCWb4LuBjdB+z2yQ1fMXxzNC3qQ==
@@ -8035,7 +8031,7 @@ Lockfile:
     dependencies:
       prop-types "^15.7.2"
   
-  react-native-calendars@^1.1294.0:
+  react-native-calendars@^1.1298.0:
     version "1.1298.0"
     resolved "https://registry.yarnpkg.com/react-native-calendars/-/react-native-calendars-1.1298.0.tgz#f3e4b4c18b451657505f702ea01dc43b3a849dce"
     integrity sha512-+g9b6ceYQn+kEzS2dK5RsOhXR4Ue659EOVTpg+5kFZBHbgwqIqSwpKQIXwK6h8jkDMpUgjMYn4qVLYHW77FzWw==
