@@ -1,11 +1,20 @@
 import { StyleSheet, Text, View } from "react-native";
 import testIDs from "../mocks/testIDS";
-import React, { useRef, useMemo, useCallback } from "react";
+import React, {
+  useRef,
+  useState,
+  useEffect,
+  useMemo,
+  useCallback,
+} from "react";
 import {
   ExpandableCalendar,
   AgendaList,
   CalendarProvider,
   WeekCalendar,
+  Agenda,
+  Calendar,
+  LocaleConfig,
 } from "react-native-calendars";
 import { agendaItems, getMarkedDates } from "../mocks/agendaItems";
 import AgendaItem from "../mocks/AgendaItem";
@@ -15,6 +24,220 @@ import Screen from "../components/Screen";
 const leftArrowIcon = require("../assets/previous.png");
 const rightArrowIcon = require("../assets/next.png");
 const ITEMS = agendaItems;
+import { firestore, auth } from "../config/firebase/firebase";
+
+import { Avatar } from "react-native-paper";
+import {
+  doc,
+  setDoc,
+  addDoc,
+  getDoc,
+  getFirestore,
+  onSnapshot,
+  collection,
+  query,
+  where,
+  getDocs,
+  updateDoc,
+} from "firebase/firestore";
+
+LocaleConfig.locales["de"] = {
+  monthNames: [
+    "Januar",
+    "Februar",
+    "März",
+    "April",
+    "Mai",
+    "Juni",
+    "Juli",
+    "August",
+    "September",
+    "Oktober",
+    "November",
+    "Dezember",
+  ],
+  monthNamesShort: [
+    "Jan.",
+    "Feb.",
+    "März",
+    "Apr.",
+    "Mai",
+    "Juni",
+    "Juli",
+    "Aug.",
+    "Sept.",
+    "Okt.",
+    "Nov.",
+    "Dez.",
+  ],
+  dayNames: [
+    "Sonntag",
+    "Montag",
+    "Dienstag",
+    "Mittwoch",
+    "Donnerstag",
+    "Freitag",
+    "Samstag",
+  ],
+  dayNamesShort: ["So.", "Mo.", "Di.", "Mi.", "Do.", "Fr.", "Sa."],
+};
+
+LocaleConfig.defaultLocale = "de";
+
+const CalendarScreen = () => {
+  const [items, setItems] = useState({});
+  const [selectedDate, setSelectedDate] = useState("");
+  const [markedDates, setMarkedDates] = useState({});
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const user = auth.currentUser;
+    const weddingsCollectionRef = collection(firestore, "weddings");
+    const querySnapshot = await getDocs(query(weddingsCollectionRef));
+
+    const events = {};
+    const marked = {};
+
+    querySnapshot.forEach((doc) => {
+      const { startDatum, startZeit, ort, beschreibung, workers } = doc.data();
+      console.log("Weddingsdata for Calendar: ", doc.data());
+      console.log(startDatum);
+      const moment = require("moment");
+
+      const parts = startDatum.split(".");
+      const formattedDate = moment(
+        `${parts[2]}-${parts[1]}-${parts[0]}`,
+        "YYYY-MM-DD"
+      );
+      const isoDateString = formattedDate.format("YYYY-MM-DD");
+      console.log("date-format for agenda: ", isoDateString);
+      if (!events[isoDateString]) {
+        events[isoDateString] = [];
+      }
+      let positions = [];
+      workers.forEach((worker) => {
+        if (worker.id === user.uid) {
+          positions = worker.positions;
+        }
+      });
+      events[isoDateString].push({
+        ort,
+        beschreibung,
+        startDatum,
+        startZeit,
+        positions,
+      });
+
+      if (!marked[isoDateString]) {
+        marked[isoDateString] = { marked: true };
+      }
+    });
+
+    setItems(events);
+    setMarkedDates(marked);
+  };
+
+  const loadItemsForMonth = async (date) => {
+    setSelectedDate(date.dateString);
+    const startDate = new Date(date.year, date.month - 1, 1);
+    const endDate = new Date(date.year, date.month, 0, 23, 59, 59);
+
+    const eventsCollectionRef = collection(firestore, "weddings");
+    const q = query(
+      eventsCollectionRef,
+      where("date", ">=", startDate),
+      where("date", "<=", endDate)
+    );
+    const querySnapshot = await getDocs(q);
+
+    const events = {};
+    const marked = {};
+
+    querySnapshot.forEach((doc) => {
+      const { startDatum, ort, beschreibung } = doc.data();
+      const parts = startDatum.split(".");
+      const formattedDate = new Date(parts[2], parts[1] - 1, parts[0]);
+      const isoDateString = formattedDate.toISOString().split("T")[0];
+
+      if (!events[isoDateString]) {
+        events[isoDateString] = [];
+      }
+
+      events[isoDateString].push({ title, description });
+
+      if (!marked[isoDateString]) {
+        marked[isoDateString] = { marked: true };
+      }
+    });
+
+    setItems(events);
+    setMarkedDates(marked);
+  };
+
+  const renderAgendaItem = (item) => {
+    return (
+      <View style={styles.itemContainer}>
+        <Avatar.Text label={item.ort} size={40} style={styles.avatar} />
+        <Text>{item.startZeit}</Text>
+        <Text>{item.beschreibung}</Text>
+        <Text>{item.positions}</Text>
+      </View>
+    );
+  };
+
+  return (
+    <View style={styles.container}>
+      <Agenda
+        items={items}
+        renderItem={renderAgendaItem}
+        renderEmptyData={() => <Text>Keine Hochzeit gefunden</Text>}
+        pastScrollRange={3}
+        // Max amount of months allowed to scroll to the future. Default = 50
+        futureScrollRange={3}
+        selected={"2023-08-23"}
+        // If disabledByDefault={true} dates flagged as not disabled will be enabled. Default = false
+        disabledByDefault={true}
+        // If provided, a standard RefreshControl will be added for "Pull to Refresh" functionality. Make sure to also set the refreshing prop correctly
+        onRefresh={() => console.log("refreshing...")}
+        // Set this true while waiting for new data from a refresh
+        refreshing={false}
+        // Add a custom RefreshControl component, used to provide pull-to-refresh functionality for the ScrollView
+        refreshControl={null}
+        // Agenda theme
+        theme={{
+          agendaDayTextColor: "black",
+          agendaDayNumColor: "blue",
+          agendaTodayColor: "red",
+          agendaKnobColor: "blue",
+        }}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  calendar: {
+    marginBottom: 10,
+  },
+  itemContainer: {
+    backgroundColor: "#fff",
+    borderRadius: 5,
+    padding: 10,
+    marginBottom: 10,
+  },
+  itemTitle: {
+    fontWeight: "bold",
+    marginBottom: 5,
+  },
+});
+
+//================================================
 /*
 const CalendarScreen = (props) => {
   const { weekView } = props;
@@ -102,9 +325,13 @@ const styles = StyleSheet.create({
 });
 */
 
+//===========================================
+/*
 const CalendarScreen = (props) => {
+  
+  
+  
   const [items, setItems] = useState({});
-
   const loadItems = (day) => {
     const items = items || {};
     setTimeout(() => {
@@ -135,20 +362,21 @@ const CalendarScreen = (props) => {
   };
   return (
     <>
-      <Screen>
-        <Agenda
-          items={items}
-          loadItemsForMonth={loadItems}
-          selected={"2017-05-16"}
-        />
-      </Screen>
+      <Agenda
+        items={items}
+        loadItemsForMonth={loadItems}
+        selected={"2022-07-16"}
+      />
     </>
   );
+  
 };
 
 const timeToString = (time) => {
   const date = new Date(time);
   return date.toISOString().split("T")[0];
 };
+*/
+//======================================
 
 export default CalendarScreen;

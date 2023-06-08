@@ -180,14 +180,19 @@ const CreateWeddingScreen = () => {
       const name = user.value;
       const id = user._id;
       const positions = user.positions;
-      workers.push({ id, name, positions });
+      //initial value
+      //const isAccepted = null;
+
+      // dummy value if worker has accepted this,
+      const isAccepted = true;
+      workers.push({ id, name, positions, isAccepted });
     });
     console.log(workers);
     // Getting time,date and isShooting (not from Form)
     const startZeit = moment(time).format("HH:mm");
     const startDatum = date.toLocaleDateString();
     const isShooting = isSwitchOn;
-    const isInitial = true;
+
     // Create Wedding
     try {
       const weddingsRef = collection(firestore, "weddings");
@@ -201,7 +206,6 @@ const CreateWeddingScreen = () => {
         damat,
         isShooting,
         workers,
-        isInitial,
       });
 
       //update doc with id
@@ -232,7 +236,7 @@ const CreateWeddingScreen = () => {
       // ausblenden  List Items
       setUserAndPositionSubmitted(false);
       //Reset List Item of Workers
-      setPaperUserList([]);
+      setPaperUserList(usersData);
       Toast.success("Hochzeit wurde erfolgreich erstellt", "bottom");
     } catch (error) {
       console.error(error.message);

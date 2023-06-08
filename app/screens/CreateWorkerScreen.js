@@ -27,6 +27,7 @@ import {
   where,
   getDocs,
 } from "firebase/firestore";
+import { ScrollView } from "react-native-gesture-handler";
 
 const CreateWorkerScreen = () => {
   const [activitiesData, setActivitiesData] = useState({
@@ -54,8 +55,26 @@ const CreateWorkerScreen = () => {
       .then((userCredential) => {
         values.userUid = userCredential.user.uid;
         addUser(values);
-        reset();
+
         Toast.success("Mitarbeiter konto erstellt", "bottom");
+
+        reset();
+
+        setActivitiesData({
+          ...activitiesData,
+          value: "",
+          selectedList: [],
+          error: "",
+        });
+        setUsersData({
+          value: "",
+          list: [
+            { _id: "1", value: "admin" },
+            { _id: "2", value: "mitarbeiter" },
+          ],
+          selectedList: [],
+          error: "",
+        });
       })
       .catch((error) => {
         Toast.error("Mitarbeiter konto nicht erstellt werden", "bottom");
@@ -133,111 +152,69 @@ const CreateWorkerScreen = () => {
       adresse: "",
       benutzername: "",
       passwort: "",
-      rolle: "",
-      activity: "",
     },
   });
 
   return (
     <>
-      <Provider>
-        <HookFormController
-          label="vorname"
-          control={control}
-          required={true}
-          errors={errors}
-        />
-        <HookFormController
-          label="nachname"
-          control={control}
-          required={true}
-          errors={errors}
-        />
-        <HookFormController
-          label="geburtsdatum"
-          control={control}
-          required={true}
-          errors={errors}
-          right={<TextInput.Icon iconColor="#000" icon="calendar" />}
-        />
-        <HookFormController
-          label="benutzername"
-          control={control}
-          required={true}
-          errors={errors}
-        />
-        <HookFormController
-          label="passwort"
-          control={control}
-          required={true}
-          errors={errors}
-          right={<TextInput.Icon iconColor="#000" icon="eye" />}
-        />
+      <ScrollView>
+        <Provider>
+          <HookFormController
+            label="vorname"
+            control={control}
+            required={true}
+            errors={errors}
+          />
+          <HookFormController
+            label="nachname"
+            control={control}
+            required={true}
+            errors={errors}
+          />
+          <HookFormController
+            label="geburtsdatum"
+            control={control}
+            required={true}
+            errors={errors}
+            right={<TextInput.Icon iconColor="#000" icon="calendar" />}
+          />
+          <HookFormController
+            label="benutzername"
+            control={control}
+            required={true}
+            errors={errors}
+          />
+          <HookFormController
+            label="passwort"
+            control={control}
+            required={true}
+            errors={errors}
+            right={<TextInput.Icon iconColor="#000" icon="eye" />}
+          />
 
-        <Controller
-          name="rolle"
-          control={control}
-          defaultValue=""
-          rules={{ required: "Rolle auswählen ist erforderlich" }}
-          render={({ field: { onChange } }) => (
-            <PaperSelect
-              label="Rolle auswählen"
-              value={usersData.value}
-              onSelection={(value) => {
-                setUsersData({
-                  ...usersData,
-                  value: value.text,
-                  selectedList: value.selectedList,
-                  error: "",
-                });
-                onChange(value.text);
-              }}
-              arrayList={[...usersData.list]}
-              textInputMode="outlined"
-              selectedArrayList={[...usersData.selectedList]}
-              errorText={usersData.error}
-              multiEnable={false}
-              checkboxColor="blue"
-              checkboxLabelStyle={{ color: "black", fontWeight: "700" }}
-              dialogButtonLabelStyle={{
-                padding: 10,
-                borderRadius: 5,
-              }}
-              searchPlaceholder="Suchen"
-              modalCloseButtonText="Abbrechen"
-              modalDoneButtonText="Auswählen"
-            />
-          )}
-        />
-        {errors.rolle && (
-          <Text variant="bodyMedium" style={{ color: theme.colors.error }}>
-            {errors.rolle.message}
-          </Text>
-        )}
-        {usersData.value === "mitarbeiter" && (
           <Controller
-            name="activity"
+            name="rolle"
             control={control}
             defaultValue=""
-            rules={{ required: "Aktivität auswählen ist erforderlich" }}
+            rules={{ required: "Rolle auswählen ist erforderlich" }}
             render={({ field: { onChange } }) => (
               <PaperSelect
-                label="Aktivität auswählen"
-                value={activitiesData.value}
+                label="Rolle auswählen"
+                value={usersData.value}
                 onSelection={(value) => {
-                  setActivitiesData({
-                    ...activitiesData,
+                  setUsersData({
+                    ...usersData,
                     value: value.text,
                     selectedList: value.selectedList,
                     error: "",
                   });
                   onChange(value.text);
                 }}
-                arrayList={[...activitiesData.list]}
+                arrayList={[...usersData.list]}
                 textInputMode="outlined"
-                selectedArrayList={[...activitiesData.selectedList]}
-                errorText={activitiesData.error}
-                multiEnable={true}
+                selectedArrayList={[...usersData.selectedList]}
+                errorText={usersData.error}
+                multiEnable={false}
                 checkboxColor="blue"
                 checkboxLabelStyle={{ color: "black", fontWeight: "700" }}
                 dialogButtonLabelStyle={{
@@ -250,23 +227,65 @@ const CreateWorkerScreen = () => {
               />
             )}
           />
-        )}
+          {errors.rolle && (
+            <Text variant="bodyMedium" style={{ color: theme.colors.error }}>
+              {errors.rolle.message}
+            </Text>
+          )}
+          {usersData.value === "mitarbeiter" && (
+            <Controller
+              name="activity"
+              control={control}
+              defaultValue=""
+              rules={{ required: "Aktivität auswählen ist erforderlich" }}
+              render={({ field: { onChange } }) => (
+                <PaperSelect
+                  label="Aktivität auswählen"
+                  value={activitiesData.value}
+                  onSelection={(value) => {
+                    setActivitiesData({
+                      ...activitiesData,
+                      value: value.text,
+                      selectedList: value.selectedList,
+                      error: "",
+                    });
+                    onChange(value.text);
+                  }}
+                  arrayList={[...activitiesData.list]}
+                  textInputMode="outlined"
+                  selectedArrayList={[...activitiesData.selectedList]}
+                  errorText={activitiesData.error}
+                  multiEnable={true}
+                  checkboxColor="blue"
+                  checkboxLabelStyle={{ color: "black", fontWeight: "700" }}
+                  dialogButtonLabelStyle={{
+                    padding: 10,
+                    borderRadius: 5,
+                  }}
+                  searchPlaceholder="Suchen"
+                  modalCloseButtonText="Abbrechen"
+                  modalDoneButtonText="Auswählen"
+                />
+              )}
+            />
+          )}
 
-        {errors.activity && (
-          <Text variant="bodyMedium" style={{ color: theme.colors.error }}>
-            {errors.activity.message}
-          </Text>
-        )}
+          {errors.activity && (
+            <Text variant="bodyMedium" style={{ color: theme.colors.error }}>
+              {errors.activity.message}
+            </Text>
+          )}
 
-        <HookFormController
-          label="adresse"
-          control={control}
-          required={true}
-          errors={errors}
-          multiline
-        />
-        <HookFormButtons onPress={handleSubmit(onSubmit)} />
-      </Provider>
+          <HookFormController
+            label="adresse"
+            control={control}
+            required={true}
+            errors={errors}
+            multiline
+          />
+          <HookFormButtons onPress={handleSubmit(onSubmit)} />
+        </Provider>
+      </ScrollView>
     </>
   );
 };
@@ -286,16 +305,28 @@ const addUser = async (user) => {
 
   try {
     const userRef = doc(firestore, "users", userUid);
-    await setDoc(userRef, {
-      vorname,
-      nachname,
-      geburtsdatum,
-      rolle,
-      benutzername,
-      passwort,
-      activity,
-      userUid,
-    });
+    if (activity === undefined) {
+      await setDoc(userRef, {
+        vorname,
+        nachname,
+        geburtsdatum,
+        rolle,
+        benutzername,
+        passwort,
+        userUid,
+      });
+    } else {
+      await setDoc(userRef, {
+        vorname,
+        nachname,
+        geburtsdatum,
+        rolle,
+        benutzername,
+        passwort,
+        activity,
+        userUid,
+      });
+    }
     Toast.success("Mitarbeiter daten erfolgreich erstellt", "bottom");
   } catch (error) {
     console.error(error.message);

@@ -28,7 +28,7 @@ function DashboardNavigator() {
     <>
       <Tab.Navigator>
         <Tab.Screen
-          name="HomeScreen"
+          name="startSeite"
           component={HomeScreenStack}
           options={{
             tabBarIcon: ({ color, size }) => (
@@ -64,7 +64,7 @@ function DashboardNavigator() {
           }}
         />
         <Tab.Screen
-          name="account"
+          name="konto"
           component={AccountNavigator}
           options={{
             tabBarIcon: ({ color, size }) => (

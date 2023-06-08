@@ -33,6 +33,7 @@ function App() {
   const [user, setUser] = useState();
   const [loading, setLoading] = useState(false);
 
+  // FCM Permissons for IOS
   const requestUserPermission = async () => {
     const authStatus = await messaging().requestPermission();
     const enabled =
@@ -44,7 +45,7 @@ function App() {
     }
   };
 
-  //Handle user state changes
+  //Handle user state changes on firebase
   function onAuthStateChanged(user) {
     setUser(user);
     if (initializing) setInitializing(false);
@@ -133,7 +134,6 @@ function App() {
   }, []);
 
   if (initializing) return null;
-  /*
   if (!user) {
     return (
       <Stack.Navigator>
@@ -145,7 +145,6 @@ function App() {
       </Stack.Navigator>
     );
   }
-*/
   return (
     <Stack.Navigator>
       <Stack.Screen

@@ -6,6 +6,7 @@ import colors from "../config/colors";
 import Icon from "../components/Icon";
 import routes from "../navigation/routes";
 import Screen from "../components/Screen";
+import { firestore, auth } from "../config/firebase/firebase";
 
 const menuItems = [
   {
@@ -57,10 +58,23 @@ function AccountScreen({ navigation }) {
       <ListItem
         title="Abmelden"
         IconComponent={<Icon name="logout" backgroundColor="#ffe66d" />}
+        onPress={handleLogout}
       />
     </Screen>
   );
 }
+const handleLogout = () => {
+  auth
+    .signOut()
+    .then(() => {
+      console.log("User successfully signed out.");
+      // Perform any additional actions after successful sign-out, such as navigating to a different screen.
+    })
+    .catch((error) => {
+      console.log("An error occurred during sign-out:", error);
+      // Handle sign-out error, if necessary.
+    });
+};
 
 const styles = StyleSheet.create({
   screen: {
