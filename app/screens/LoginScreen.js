@@ -46,8 +46,8 @@ function LoginScreen(props) {
 }
 
 handleSignIn = (values) => {
-  const email = values.username + EMAIL_SUFFIX;
-  const password = values.password;
+  const email = values.username.trim() + EMAIL_SUFFIX;
+  const password = values.password.trim();
   signInWithEmailAndPassword(auth, email, password)
     .then(() => {
       Toast.show({

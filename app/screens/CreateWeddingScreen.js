@@ -1,149 +1,64 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import {
-  Alert,
-  FlatList,
-  StyleSheet,
-  View,
-  TouchableOpacity,
   ScrollView,
+  View,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  Alert,
+  Dialog,
+  Paragraph,
+  Button,
 } from "react-native";
 import * as Yup from "yup";
-
+import moment from "moment";
+import DateTimePicker from "@react-native-community/datetimepicker";
 import {
   TextInput,
-  Text,
   Provider,
   useTheme,
   Button as PaperButton,
   Headline,
   List,
   Switch,
-  Dialog,
-  Paragraph,
-  Button,
 } from "react-native-paper";
-import HookFormButtons from "../components/forms/HookFormButtons";
-
 import { useForm, Controller } from "react-hook-form";
-
-import HookFormController from "../components/forms/HookFormController";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Toast } from "toastify-react-native";
-import DateTimePicker from "@react-native-community/datetimepicker";
-import moment from "moment";
-
-import { PaperSelect } from "react-native-paper-select";
-import { auth, EMAIL_SUFFIX, firestore } from "../config/firebase/firebase";
-
 import {
+  collection,
   doc,
   setDoc,
   addDoc,
-  getDoc,
-  getFirestore,
-  onSnapshot,
-  collection,
-  query,
-  where,
   getDocs,
   updateDoc,
 } from "firebase/firestore";
+import { auth, EMAIL_SUFFIX, firestore } from "../config/firebase/firebase";
 
 const CreateWeddingScreen = () => {
-  //alert
-
   const [showAlert, setShowAlert] = useState(false);
-
-  const [isSwitchOn, setIsSwitchOn] = useState(false);
-
+  const [isFotoshootingOn, setIsFotoshootingOn] = useState(false);
+  const [isSaalFotoOn, setIsSaalFotoOn] = useState(false);
   const [showDialog, setShowDialog] = useState(false);
   const [deleteItem, setDeleteItem] = useState(null);
-
-  const onToggleSwitch = () => setIsSwitchOn(!isSwitchOn);
-  const handleDeleteItem = (_id) => {
-    // find user in paperUserList
-    const paperUser = paperUsersList.find((user) => user._id === _id);
-
-    // remove item from paperUserList
-    const currentPaperUsersList = paperUsersList.filter(
-      (user) => user._id !== _id
-    );
-    setPaperUserList(currentPaperUsersList);
-
-    // add deleted User into UsersData again (remove Positions from paperUser)
-    const newUser = {};
-    for (const key in paperUser) {
-      if (key !== "positions") {
-        newUser[key] = paperUser[key];
-      }
-    }
-
-    // Update the usersData state using the functional form of setUsersData
-    setUsersData((prevUsersData) => ({
-      ...prevUsersData,
-      list: [...prevUsersData.list, newUser],
-      selectedList: [],
-      error: "",
-    }));
-
-    // disable expanded worker list
-    if (currentPaperUsersList.length === 0) setUserAndPositionSubmitted(false);
-    setShowDialog(false);
-  };
-  // users from Firebase
   const [users, setUsers] = useState([]);
-
-  // locations from Firebase
   const [locations, setLocations] = useState({
     value: "",
     list: [],
     selectedList: [],
     error: "",
   });
-
-  //positions from Firebase
-
   const [positions, setPositions] = useState({
     value: "",
     list: [],
     selectedList: [],
     error: "",
   });
-  // After Submitting of PaperSelect
   const [isUserAndPositionSubmitted, setUserAndPositionSubmitted] =
     useState(false);
-
-  // UserList for list items
   const [paperUsersList, setPaperUserList] = useState([]);
-  // List Accordion of react native paper
-  const [expanded, setExpanded] = React.useState(true);
+  const [expanded, setExpanded] = useState(true);
 
-  const handlePress = () => setExpanded(!expanded);
-
-  // Flatlist renderItem
-  const renderItem = ({ item }) => (
-    <TouchableOpacity onPress={() => deleteItem(item._id)}>
-      <Text>{item.value}</Text>
-    </TouchableOpacity>
-  );
-
-  //PaperSelect Validator
-  const selectValidator = (value) => {
-    if (!value || value.length <= 0) {
-      return "Eine Option auswählen.";
-    }
-
-    return "";
-  };
-
-  const [usersData, setUsersData] = useState({
-    value: "",
-    list: [],
-    selectedList: [],
-    error: "",
-  });
-
-  // Date Time Picker
   const [date, setDate] = useState(new Date());
   const [mode, setMode] = useState("");
   const [showTime, setTimeShow] = useState(false);
@@ -154,101 +69,8 @@ const CreateWeddingScreen = () => {
     return defaultTime;
   });
 
-  const showDatepicker = () => {
-    setMode("date");
-    setDateShow(true);
-  };
-
-  const showTimepicker = () => {
-    setMode("time");
-    setTimeShow(true);
-  };
-
-  // onSubmit
-  const onSubmit = (values) => {
-    console.log("onsubmit works");
-    addWedding(values);
-  };
-
-  const addWedding = async (wedding) => {
-    // getting values from Form
-    const { ort, beschreibung, damat, gelin } = wedding;
-
-    // getting workers paperUserList.
-    const workers = [];
-    paperUsersList.forEach((user) => {
-      const name = user.value;
-      const id = user._id;
-      const positions = user.positions;
-      //initial value
-      //const isAccepted = null;
-
-      // dummy value if worker has accepted this,
-      const isAccepted = true;
-      workers.push({ id, name, positions, isAccepted });
-    });
-    console.log(workers);
-    // Getting time,date and isShooting (not from Form)
-    const startZeit = moment(time).format("HH:mm");
-    const startDatum = date.toLocaleDateString();
-    const isShooting = isSwitchOn;
-
-    // Create Wedding
-    try {
-      const weddingsRef = collection(firestore, "weddings");
-
-      const docRef = await addDoc(weddingsRef, {
-        ort,
-        beschreibung,
-        startZeit,
-        startDatum,
-        gelin,
-        damat,
-        isShooting,
-        workers,
-      });
-
-      //update doc with id
-      const weddingRef = doc(firestore, "weddings", docRef.id);
-
-      await updateDoc(weddingRef, {
-        id: docRef.id,
-      });
-      reset();
-
-      //reset prozess of selected Locations
-      setLocations({
-        ...locations,
-        value: "",
-        selectedList: [],
-        error: "",
-      });
-      //reset prozess of selected Workers
-      setUsersData({
-        ...usersData,
-        value: "",
-        selectedList: [],
-        error: "",
-      });
-
-      //reset Switch
-      setIsSwitchOn(false);
-      // ausblenden  List Items
-      setUserAndPositionSubmitted(false);
-      //Reset List Item of Workers
-      setPaperUserList(usersData);
-      Toast.success("Hochzeit wurde erfolgreich erstellt", "bottom");
-    } catch (error) {
-      console.error(error.message);
-      console.error(error.code);
-      Toast.error("Hochzeit konnte nicht erstellt werden", "bottom");
-    }
-  };
-
-  // Text Theme
   const theme = useTheme();
 
-  //Register
   useEffect(() => {
     register("ort");
     register("gelin");
@@ -256,7 +78,6 @@ const CreateWeddingScreen = () => {
     register("beschreibung");
     register("mitarbeiter");
     register("positions");
-    register("shooting");
 
     // Set Paper Select Data
     let isMounted = true;
@@ -271,12 +92,7 @@ const CreateWeddingScreen = () => {
           value: doc.data().position,
         });
       });
-      setPositions({
-        value: "",
-        list: positions,
-        selectedList: [],
-        error: "",
-      });
+      setPositions({ value: "", list: positions, selectedList: [], error: "" });
     });
 
     //Getting locations from Firebase
@@ -287,12 +103,7 @@ const CreateWeddingScreen = () => {
         locations.push({ _id: doc.data()._id, value: doc.data().location });
       });
       locations.sort((a, b) => a._id - b._id);
-      setLocations({
-        value: "",
-        list: locations,
-        selectedList: [],
-        error: "",
-      });
+      setLocations({ value: "", list: locations, selectedList: [], error: "" });
     });
 
     //Getting users from Firebase
@@ -306,21 +117,7 @@ const CreateWeddingScreen = () => {
           value: doc.data().vorname + " " + doc.data().nachname,
         });
       });
-    });
-    const unsubscribe = onSnapshot(q, (querySnapshot) => {
-      const users = [];
-      querySnapshot.forEach((doc) => {
-        users.push({
-          _id: doc.id,
-          value: doc.data().vorname + " " + doc.data().nachname,
-        });
-      });
-      setUsersData({
-        value: "",
-        list: users,
-        selectedList: [],
-        error: "",
-      });
+      setUsersData({ value: "", list: users, selectedList: [], error: "" });
     });
 
     return () => {
@@ -328,22 +125,135 @@ const CreateWeddingScreen = () => {
     };
   }, [register]);
 
-  // useForm Hooks
-  const {
-    control,
-    handleSubmit,
-    formState: { errors },
-    reset,
-    register,
-  } = useForm({
-    resolver: yupResolver(schema),
-    defaultValues: {
-      ort: "",
-      gelin: "",
-      damat: "",
-      beschreibung: "",
-    },
+  const schema = Yup.object().shape({
+    ort: Yup.string().required("Pflichtfeld"),
+    mitarbeiter: Yup.string()
+      .required("mindestens eine Option auswählen")
+      .min(1),
+    positions: Yup.string().required("mindestens eine Option auswählen").min(1),
   });
+
+  const handleDeleteItem = (_id) => {
+    const paperUser = paperUsersList.find((user) => user._id === _id);
+    const currentPaperUsersList = paperUsersList.filter(
+      (user) => user._id !== _id
+    );
+    setPaperUserList(currentPaperUsersList);
+
+    const newUser = {};
+    for (const key in paperUser) {
+      if (key !== "positions") {
+        newUser[key] = paperUser[key];
+      }
+    }
+
+    setUsersData((prevUsersData) => ({
+      ...prevUsersData,
+      list: [...prevUsersData.list, newUser],
+      selectedList: [],
+      error: "",
+    }));
+
+    if (currentPaperUsersList.length === 0) setUserAndPositionSubmitted(false);
+    setShowDialog(false);
+  };
+
+  const renderItem = ({ item }) => (
+    <TouchableOpacity onPress={() => deleteItem(item._id)}>
+      <Text>{item.value}</Text>
+    </TouchableOpacity>
+  );
+
+  const selectValidator = (value) => {
+    if (!value || value.length <= 0) {
+      return "Eine Option auswählen.";
+    }
+    return "";
+  };
+
+  const [usersData, setUsersData] = useState({
+    value: "",
+    list: [],
+    selectedList: [],
+    error: "",
+  });
+
+  const showDatepicker = () => {
+    setMode("date");
+    setDateShow(true);
+  };
+
+  const showTimepicker = () => {
+    setMode("time");
+    setTimeShow(true);
+  };
+
+  const onSubmit = (values) => {
+    addWedding(values);
+  };
+
+  const addWedding = async (wedding) => {
+    const { ort, beschreibung, damat, gelin } = wedding;
+
+    const workers = [];
+    paperUsersList.forEach((user) => {
+      const name = user.value;
+      const id = user._id;
+      const positions = user.positions;
+      const isAccepted = true;
+      workers.push({ id, name, positions, isAccepted });
+    });
+
+    const startZeit = moment(time).format("HH:mm");
+    const startDatum = date.toLocaleDateString();
+
+    try {
+      const weddingsRef = collection(firestore, "weddings");
+      const docRef = await addDoc(weddingsRef, {
+        ort,
+        beschreibung,
+        startZeit,
+        startDatum,
+        gelin,
+        damat,
+        isSaalFotoOn,
+        isFotoshootingOn,
+        workers,
+      });
+
+      const weddingRef = doc(firestore, "weddings", docRef.id);
+      await updateDoc(weddingRef, {
+        id: docRef.id,
+      });
+      reset();
+
+      setLocations({
+        ...locations,
+        value: "",
+        selectedList: [],
+        error: "",
+      });
+
+      setUsersData({
+        ...usersData,
+        value: "",
+        selectedList: [],
+        error: "",
+      });
+
+      setIsSaalFotoOn(false);
+      setIsFotoshootingOn(false);
+      setUserAndPositionSubmitted(false);
+      setPaperUserList(usersData);
+      Toast.success("Hochzeit wurde erfolgreich erstellt", "bottom");
+    } catch (error) {
+      console.error(error.message);
+      console.error(error.code);
+      Toast.error("Hochzeit konnte nicht erstellt werden", "bottom");
+    }
+  };
+
+  const handlePress = () => setExpanded(!expanded);
 
   return (
     <>
@@ -566,23 +476,60 @@ const CreateWeddingScreen = () => {
             style={{
               flexDirection: "row",
               alignItems: "center",
-              justifyContent: "flex-end",
+              justifyContent: "space-between",
             }}
           >
-            <Text style={{ marginRight: 8 }}>Fotoshooting</Text>
-            <Controller
-              name="shooting"
-              control={control}
-              defaultValue=""
-              rules={{ required: "Foto-Shooting auswählen ist erforderlich" }}
-              render={({ field: { onChange } }) => (
-                <Switch
-                  value={isSwitchOn}
-                  onValueChange={onToggleSwitch}
-                  label="Fotoshooting"
-                />
-              )}
-            />
+            <View
+              style={{
+                flex: 1,
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "flex-end",
+              }}
+            >
+              <Text style={{ marginRight: 8 }}>Fotoshooting</Text>
+              <Controller
+                name="shooting"
+                control={control}
+                defaultValue={false} // Use a default value of false
+                render={({ field: { onChange } }) => (
+                  <Switch
+                    value={isFotoshootingOn}
+                    onValueChange={(value) => {
+                      setIsFotoshootingOn(value);
+                      onChange(value); // This sets the form field value
+                    }}
+                    label="Fotoshooting"
+                  />
+                )}
+              />
+            </View>
+
+            <View
+              style={{
+                flex: 1,
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "flex-end",
+              }}
+            >
+              <Text style={{ marginRight: 8 }}>Saal Foto</Text>
+              <Controller
+                name="saalfoto"
+                control={control}
+                defaultValue={false} // Use a default value of false
+                render={({ field: { onChange } }) => (
+                  <Switch
+                    value={isSaalFotoOn}
+                    onValueChange={(value) => {
+                      setIsSaalFotoOn(value);
+                      onChange(value); // This sets the form field value
+                    }}
+                    label="Saal Foto"
+                  />
+                )}
+              />
+            </View>
           </View>
 
           <HookFormController
@@ -779,44 +726,6 @@ const CreateWeddingScreen = () => {
     </>
   );
 };
-/*
-//add user into firestore
-const addWedding = async (user) => {
-  const {
-    vorname,
-    nachname,
-    geburtsdatum,
-    rolle,
-    benutzername,
-    passwort,
-    userUid,
-  } = user;
-
-  try {
-    const userRef = doc(firestore, "weddings", userUid);
-    await setDoc(userRef, {
-      vorname,
-      nachname,
-      geburtsdatum,
-      rolle,
-      benutzername,
-      passwort,
-      userUid,
-    });
-    Toast.success("Mitarbeiter daten erfolgreich erstellt", "bottom");
-  } catch (error) {
-    console.error(error.message);
-    console.error(error.code);
-    Toast.error("Mitarbeiter daten konto nicht erstellt werden", "bottom");
-  }
-};
-*/
-//validation
-const schema = Yup.object().shape({
-  ort: Yup.string().required("Pflichtfeld"),
-  mitarbeiter: Yup.string().required("mindestens eine Option auswählen").min(1),
-  positions: Yup.string().required("mindestens eine Option auswählen").min(1),
-});
 
 const styles = StyleSheet.create({
   container: {
@@ -829,34 +738,5 @@ const styles = StyleSheet.create({
     width: "100%",
   },
 });
-export default CreateWeddingScreen;
 
-/**
- * 
- *    <PaperSelect
-            label="Mitarbeiter auswählen"
-            value={usersData.value}
-            onSelection={(value) => {
-              setUsersData({
-                ...usersData,
-                value: value.text,
-                selectedList: value.selectedList,
-                error: "",
-              });
-            }}
-            arrayList={[...usersData.list]}
-            textInputMode="outlined"
-            selectedArrayList={[...usersData.selectedList]}
-            errorText={usersData.error}
-            multiEnable={false}
-            checkboxColor="blue"
-            checkboxLabelStyle={{ color: "black", fontWeight: "700" }}
-            dialogButtonLabelStyle={{
-              padding: 10,
-              borderRadius: 5,
-            }}
-            searchPlaceholder="Suchen"
-            modalCloseButtonText="Abbrechen"
-            modalDoneButtonText="Auswählen"
-          />
- */
+export default CreateWeddingScreen;

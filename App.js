@@ -12,6 +12,7 @@ import DashboardNavigator from "./app/screens/DashboardNavigator";
 //import * as Notifications from "expo-notifications";
 //import Constants from "expo-constants";
 import messaging from "@react-native-firebase/messaging";
+import { PaperProvider, Portal, Provider } from "react-native-paper";
 
 import {
   doc,
@@ -159,7 +160,10 @@ function App() {
 export default () => {
   return (
     <NavigationContainer>
-      <App />
+      <Provider>
+        <App />
+      </Provider>
+
       <Toast />
       <ToastManager />
     </NavigationContainer>

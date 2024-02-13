@@ -8,7 +8,7 @@ import ListingEditScreen from "../screens/ListingEditScreen";
 import NewListingButton from "./NewListingButton";
 import routes from "./routes";
 import { createStackNavigator } from "@react-navigation/stack";
-import CreateWeddingScreen from "../screens/CreateWeddingScreen";
+import CreateWeddingScreen from "../screens/CreateWeddingScreenOLD";
 import CreateWorkerScreen from "../screens/CreateWorkerScreen";
 import { NavigationContainer } from "@react-navigation/native";
 
